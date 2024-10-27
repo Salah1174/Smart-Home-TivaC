@@ -1,6 +1,6 @@
 # Smart-Home-TivaC
  Embedded Systems Project 
- Team Members 
+- Team Members 
 - Mohamed Salah
 - Salma Youssef
 - Seif Yasser
