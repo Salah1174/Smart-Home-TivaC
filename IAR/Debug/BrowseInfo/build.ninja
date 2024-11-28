@@ -24,48 +24,77 @@ rule PDBLINK
 
 
 #Build steps
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl : COMPILER_XCL 
-  xclcommand = -source_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\Drivers\MCAL\DIO\DIO.c" -xcl_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl" -macro_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\Drivers\MCAL\DIO\DIO.c" -o "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\DIO" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.tmp"
-  rspfile_name = C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl.rsp
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\AlarmMod\Alarm.c -xcl_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.xcl -macro_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\AlarmMod\Alarm.c -o C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.tmp
+  rspfile_name = C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.xcl.rsp
 
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl : COMPILER_XCL 
-  xclcommand = -source_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart0.c" -xcl_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl" -macro_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart0.c" -o "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.tmp"
-  rspfile_name = C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl.rsp
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\RelayMod\Relay.c -xcl_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.xcl -macro_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\RelayMod\Relay.c -o C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.tmp
+  rspfile_name = C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.xcl.rsp
 
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl : COMPILER_XCL 
-  xclcommand = -source_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c" -xcl_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl" -macro_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c" -o "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.tmp"
-  rspfile_name = C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl.rsp
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\DIO\DIO.c -xcl_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl -macro_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\DIO\DIO.c -o C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\DIO --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.tmp
+  rspfile_name = C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl.rsp
 
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
-  xclcommand = -source_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\main.c" -xcl_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl" -macro_file "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
-  flags = "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\main.c" -o "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.tmp"
-  rspfile_name = C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl.rsp
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\UART\uart0.c -xcl_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl -macro_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\UART\uart0.c -o C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.tmp
+  rspfile_name = C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl.rsp
 
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi : INDEXER C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl |  $
-C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\Drivers\MCAL\DIO\DIO.c
-  flags = "-out=C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi" -f "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl"
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c -xcl_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl -macro_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c -o C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.tmp
+  rspfile_name = C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl.rsp
 
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.pbi : INDEXER C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl |  $
-C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart0.c
-  flags = "-out=C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.pbi" -f "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl"
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\main.c -xcl_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl -macro_file C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\main.c -o C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.tmp
+  rspfile_name = C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl.rsp
 
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi : INDEXER C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl |  $
-C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c
-  flags = "-out=C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi" -f "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl"
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.pbi : INDEXER C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.xcl |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\AlarmMod\Alarm.c
+  flags = -out=C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.pbi -f C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.xcl
 
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi : INDEXER C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl |  $
-C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\main.c
-  flags = "-out=C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi" -f "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl"
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.pbi : INDEXER C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.xcl |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\RelayMod\Relay.c
+  flags = -out=C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.pbi -f C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.xcl
 
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbw : MAKEBROWSE C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbd
-  flags = "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbd" -output "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbw"
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi : INDEXER C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\DIO\DIO.c
+  flags = -out=C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi -f C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.xcl
 
-build C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbd : PDBLINK C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi |  $
-C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.pbi $
-C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi $
-C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi
-  flags = -M "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbd" "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi" "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.pbi" "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi" "C$:\ASU\ASU\Fall$ 2024\Intro$ to$ Embedded$ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi"
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.pbi : INDEXER C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\UART\uart0.c
+  flags = -out=C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.pbi -f C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.xcl
+
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi : INDEXER C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c
+  flags = -out=C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi -f C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.xcl
+
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi : INDEXER C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\main.c
+  flags = -out=C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi -f C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.xcl
+
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbw : MAKEBROWSE C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbd
+  flags = C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbd -output C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbw
+
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part0.pbi : PDBLINK C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.pbi |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.pbi
+  flags = -M C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part0.pbi C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\AlarmMod\Alarm.pbi C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.pbi
+
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part1.pbi : PDBLINK C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.pbi
+  flags = -M C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part1.pbi C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart0.pbi
+
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part2.pbi : PDBLINK C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi
+  flags = -M C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part2.pbi C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi
+
+build C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbd : PDBLINK C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part0.pbi |  $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part1.pbi $
+C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part2.pbi
+  flags = -M C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome.pbd C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part0.pbi C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part1.pbi C$:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\SmartHome_part2.pbi
 

@@ -1,15 +1,15 @@
-"C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\DIO\DIO.c"
+"C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\DIO\DIO.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi.dep
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi.dep
 -o
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\DIO\DIO.pbi
 -I
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\DIO
+C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\DIO
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I

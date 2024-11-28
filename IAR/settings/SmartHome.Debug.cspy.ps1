@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.general.xcl" --backend -f "C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.general.xcl" --backend -f "C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.driver.xcl" 
 }

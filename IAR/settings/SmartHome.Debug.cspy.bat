@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.general.xcl" --backend -f "C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.general.xcl" --backend -f "C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\settings\SmartHome.Debug.driver.xcl" 
 
 @echo off 
 :end

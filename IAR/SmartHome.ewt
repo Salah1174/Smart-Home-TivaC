@@ -2842,6 +2842,27 @@
         </settings>
     </configuration>
     <group>
+        <name>HAL</name>
+        <group>
+            <name>AlarmMod</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\AlarmMod\Alarm.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\AlarmMod\Alarm.h</name>
+            </file>
+        </group>
+        <group>
+            <name>RelayMod</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\RelayMod\Relay.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\Relay.h</name>
+            </file>
+        </group>
+    </group>
+    <group>
         <name>MCAL</name>
         <group>
             <name>DIO</name>
@@ -2879,6 +2900,9 @@
                 <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart5.h</name>
             </file>
         </group>
+        <file>
+            <name>$PROJ_DIR$\..\Drivers\driverlib\ewarm\Exe\driverlib.a</name>
+        </file>
     </group>
     <file>
         <name>$PROJ_DIR$\main.c</name>
