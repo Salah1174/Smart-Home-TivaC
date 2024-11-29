@@ -335,7 +335,8 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state></state>
+                    <state>"C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib"
+</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2145,7 +2146,7 @@
             </file>
         </group>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\driverlib\ewarm\Exe\driverlib.a</name>
+            <name>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a</name>
         </file>
     </group>
     <file>

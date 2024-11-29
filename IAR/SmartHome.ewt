@@ -2901,7 +2901,7 @@
             </file>
         </group>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\driverlib\ewarm\Exe\driverlib.a</name>
+            <name>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a</name>
         </file>
     </group>
     <file>

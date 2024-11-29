@@ -59,3 +59,12 @@
 78	111	7544290368187017	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	20e1a60d5b31ba55
 2	102	7545126135419587	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	c867ff9bfd7acbdb
 107	378	7545126138243684	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	79e66dde68a081b
+180	347	7545999427334647	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart0.o	f24978978e8dbd6a
+264	369	7545999427647108	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart5.o	95535ade0c6021f3
+221	374	7545999427647108	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	46cc159ca5cbb872
+138	388	7545999427803344	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/DIO/DIO.o	2d979712378578c0
+1	56	7546000178591763	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	fb4e3e3d7ad19941
+6	63	7546000178591763	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/RelayMod/Relay.o	56cfd81c07f2e570
+1	2400	7546000445653846	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	880c300d7e37667d
+2	118	7546002995561795	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	fb4e3e3d7ad19941
+123	156	7546002995874410	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	880c300d7e37667d
