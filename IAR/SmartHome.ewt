@@ -2858,7 +2858,7 @@
                 <name>$PROJ_DIR$\..\Drivers\HAL\RelayMod\Relay.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\Drivers\HAL\Relay.h</name>
+                <name>$PROJ_DIR$\..\Drivers\HAL\RelayMod\Relay.h</name>
             </file>
         </group>
     </group>
@@ -2877,6 +2877,18 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\MCAL\DIO\tm4c123gh6pm.h</name>
+            </file>
+        </group>
+        <group>
+            <name>GPIO</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\..\..\Documents\YA5TAAAAY\embedded\labs\lab 6 (Adavnced GPIO lab 4)\types.h</name>
             </file>
         </group>
         <group>

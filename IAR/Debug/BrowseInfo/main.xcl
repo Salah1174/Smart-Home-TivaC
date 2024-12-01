@@ -11,7 +11,7 @@ C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi
 -I
 C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR
 -I
-"C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib"\
+C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -19,7 +19,7 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\"C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib"
+C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
