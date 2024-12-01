@@ -154,7 +154,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 33 40 11 17 42 16 15 7 2 1 8 35 27 13</file>
+                    <file> 33 40 11 17 42 16 15 6 7 2 1 8 35 27 13</file>
                 </tool>
             </inputs>
         </file>

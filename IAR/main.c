@@ -6,6 +6,7 @@
 #include "driverlib\sysctl.h"
 #include "..\Drivers\MCAL\GPIO\GPIO.h"
 #include "..\Drivers\HAL\RelayMod\Relay.h"
+#include "..\Drivers\HAL\AlarmMod\Alarm.h"
 #define SYSCTL_RCGCGPIO_REG (*((volatile uint32 *)0x400FE608))
 #define SYSCTL_PRGPIO_REG   (*((volatile uint32 *)0x400FEA08))
 
@@ -31,11 +32,13 @@ int main(void)
   //relay testing
   
 //    Relay_Init();
+//    Alarm_Init();
 //    while(1){
 //    Relay_Toggle();
-////    SysCtlDelay(10000);
 //    Relay_Toggle();
-////    SysCtlDelay(10000);
+
+//      Alarm_Toggle();
+//      Alarm_Toggle();
 //    }
   
   //gpio testing
