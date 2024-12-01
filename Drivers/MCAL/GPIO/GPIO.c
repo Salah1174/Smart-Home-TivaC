@@ -67,9 +67,6 @@ void DIO_Init(uint8_t ui8Port, uint8_t ui8Pins, uint32_t ui32Direction, uint32_t
     SysCtlPeripheralEnable(ui32Peripheral);
     while(!SysCtlPeripheralReady(ui32Peripheral)) {} 
     
-//    SYSCTL_RCGCGPIO |= (1U << (ui32Port - 'A'));
-//    while ((SYSCTL_PRGPIO & (1U << (ui32Port - 'A'))) == 0) {} // Wait until the port is ready
-
     // unlock
 //    GPIOUnlockPin(ui32Port, ui8Pins);
 
