@@ -3,7 +3,9 @@
 #include <stdbool.h>
 #include <stdint.h>
 #include "driverlib\gpio.h"
+#include "driverlib\sysctl.h"
 #include "..\Drivers\MCAL\GPIO\GPIO.h"
+#include "..\Drivers\HAL\RelayMod\Relay.h"
 #define SYSCTL_RCGCGPIO_REG (*((volatile uint32 *)0x400FE608))
 #define SYSCTL_PRGPIO_REG   (*((volatile uint32 *)0x400FEA08))
 
@@ -26,17 +28,27 @@ void LED_Init(void)
 
 int main(void)
 {
+  //relay testing
+  
+//    Relay_Init();
+//    while(1){
+//    Relay_Toggle();
+////    SysCtlDelay(10000);
+//    Relay_Toggle();
+////    SysCtlDelay(10000);
+//    }
   
   //gpio testing
+  
 ////  DIO_Init('F', GPIO_PIN_0, GPIO_DIR_MODE_IN, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
 //  DIO_Init('F', GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, GPIO_DIR_MODE_OUT, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD);
 //   DIO_Write('F', GPIO_PIN_1 | GPIO_PIN_3 | GPIO_PIN_2, 0);
 //  while (1){
 //    
 //      DIO_Write('F', GPIO_PIN_3 | GPIO_PIN_2, 1);
-//    for (volatile int i = 0; i < 1000000; i++) {}
+//    SysCtlDelay(10000);
 //    DIO_Write('F', GPIO_PIN_3 | GPIO_PIN_2, 0);
-//    for (volatile int i = 0; i < 1000000; i++) {}
+//    SysCtlDelay(10000);
 //  }
     
   
