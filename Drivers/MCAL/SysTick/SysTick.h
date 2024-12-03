@@ -1,16 +1,19 @@
-#ifndef SYSTICk_H_
-#define SYSTICK_H_
+#ifndef SYSTICK_H
+#define SYSTICK_H
 
-#include "tm4c123gh6pm_registers.h"
-#include "std_types.h"
-#include "NVIC.h"
+#include <stdint.h>
+#include <stdbool.h>
 
-void SysTick_Init(uint16 a_TimeInMilliSeconds);
-void SysTick_DeInit(void);
-void SysTick_Start(void);
-void SysTick_Stop(void);
-void SysTick_StartBusyWait(uint16 a_TimeInMilliSeconds);
-extern void SysTick_Handler(void);
-extern void SysTick_SetCallBack(volatile void (*Ptr2Func) (void));
+void SysTick_init(unsigned int reloadvalue);
+void SysTick_Enable(void);
+void SysTick_Disable(void);
+void SysTci_Periodset(uint32_t ui32period);
+uint32_t SysTick_PeriodGet(void);
+uint32_t SysTick_ValueGet(void);
+bool SysTick_Is_time_out(void);
+
+
+
+
 
 #endif

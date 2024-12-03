@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>2977897757</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\lesson18\main.c</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\lesson12\main.c</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\lesson11 - lec7 - Step3 - Static\main.c</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\lesson9 - lec5 - Step2A - Stack - addnum\tm4c123gh6pm.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Exe\main.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\Lesson3 - Lec3 - Step1 - Blink - Debugging\main.c</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\lesson6 - lec4 - Step2 - LEDS\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\lesson6 - lec4 - Step2 - LEDS\main.c</file>
+            <file>$PROJ_DIR$\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\lesson12\tm4c_cmsis.h</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\Lesson3 - Lec3 - Switch - Led\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\Lesson3 - Lec3 - Switch - Led\main.c</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\lesson6 - lec4 - Step1 -Bit Wise\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\DIO.o</file>
+            <file>$PROJ_DIR$\Systick.h</file>
+            <file>$PROJ_DIR$\DIO.c</file>
+            <file>$PROJ_DIR$\DIO.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\List\main.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\bitwise_operations.h</file>
+            <file>$PROJ_DIR$\..\Lecture_Projects\Lecture_Projects\IAR-Projects-First-Half\lesson13\main.c</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 29</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8 5 6 7 9 10 13 25 30 23 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\main.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 32 11 33 26 27 22 29</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\DIO.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 22</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8 5 6 9 10 13 25 30 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 12 28</file>
+                </tool>
+            </outputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
