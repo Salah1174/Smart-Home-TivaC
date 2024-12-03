@@ -1,70 +1,44 @@
 # ninja log v5
-4	192	7542700196225239	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/DIO/DIO.o	6e2654f11594b96f
-0	68	7542701448512787	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-4	103	7542701448830072	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/DIO/DIO.o	a7bce7e3414fa27d
-107	143	7542701449299761	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	aa04a3e1e6823026
-1	64	7542701943062323	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-77	101	7542701943374438	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	aa04a3e1e6823026
-0	65	7542702074758481	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-69	98	7542702075075978	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	aa04a3e1e6823026
-1	68	7542702348887379	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-72	101	7542702349196204	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	aa04a3e1e6823026
-1	68	7542702556313067	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-72	99	7542702556786966	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	aa04a3e1e6823026
-6	157	7542704683774834	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-1	448	7542704686762340	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart0.o	697033a7c9e54ff8
-453	497	7542704687237209	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-1	159	7542709786283089	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-163	196	7542709786698797	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-6	421	7542736858412044	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-425	612	7542736860294197	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-5	103	7542738028122760	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-107	134	7542738028435176	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-1	175	7542740956402619	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart0.o	697033a7c9e54ff8
-179	204	7542740956715116	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-0	63	7542742642986880	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-66	94	7542742643298109	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-1	178	7542746641831954	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-182	211	7542746642344092	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-1	65	7542747094658389	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-69	136	7542747095234048	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-1	184	7542748433645159	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart0.o	697033a7c9e54ff8
-191	252	7542748434368565	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-2	122	7542748879277600	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-126	155	7542748879644448	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-1	121	7542749175880872	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-128	171	7542749176768925	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-1	86	7542749361609050	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-94	148	7542749362366438	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-3	225	7542749718201114	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-231	280	7542749718955447	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-1	57	7542750716555730	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart0.o	697033a7c9e54ff8
-63	137	7542750717412918	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	4bcf8d7d32ff09ba
-1	254	7542760697749114	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart0.o	697033a7c9e54ff8
-11	306	7542760697849273	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-19	327	7542760698413042	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart5.o	566a3dc5f9c611f3
-332	375	7542760698979250	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	a09a6e18650e91d5
-1	100	7542762288036695	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-108	171	7542762288850836	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	a09a6e18650e91d5
-1	110	7542763693915722	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-114	146	7542763694295723	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	a09a6e18650e91d5
-1	227	7542765283563565	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Obj/main.o	9ae57ddce5d74bdb
-236	279	7542765284260830	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	a09a6e18650e91d5
-51	205	7544290135004198	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart5.o	229798654938ff45
-136	223	7544290135196960	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart0.o	b8a84c783ecc09ea
-94	235	7544290135287053	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	c867ff9bfd7acbdb
-10	248	7544290135368942	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/DIO/DIO.o	e14be0a37a825c2e
-253	504	7544290138025490	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	20e1a60d5b31ba55
-1	74	7544290367791196	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	c867ff9bfd7acbdb
-78	111	7544290368187017	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	20e1a60d5b31ba55
-2	102	7545126135419587	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	c867ff9bfd7acbdb
-107	378	7545126138243684	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	79e66dde68a081b
-180	347	7545999427334647	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart0.o	f24978978e8dbd6a
-264	369	7545999427647108	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart5.o	95535ade0c6021f3
-221	374	7545999427647108	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	46cc159ca5cbb872
-138	388	7545999427803344	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/DIO/DIO.o	2d979712378578c0
-1	56	7546000178591763	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	fb4e3e3d7ad19941
-6	63	7546000178591763	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/RelayMod/Relay.o	56cfd81c07f2e570
-1	2400	7546000445653846	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	880c300d7e37667d
-2	118	7546002995561795	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	fb4e3e3d7ad19941
-123	156	7546002995874410	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	880c300d7e37667d
+189	286	7548512443940991	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	5d1d64e7297421b0
+18	114	7547668299443930	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart0.o	291f39ec7256181f
+15	120	7547668299443930	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/UART/uart5.o	a7163f4499d4af95
+3	66	7548512589180120	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	c7bb7ff6e2e82536
+3	175	7548513506981434	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/RelayMod/Relay.o	350a2a46c5faf008
+80	254	7548512443784712	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/GPIO/GPIO.o	c9aa4e5da14d304a
+2	52	7547698900757179	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/DIO/DIO.o	6ab88a1552828152
+184	267	7548513507922340	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+3	86	7548514592722570	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/RelayMod/Relay.o	350a2a46c5faf008
+97	187	7548514593740455	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+10	260	7548520968415658	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/GPIO/GPIO.o	c9aa4e5da14d304a
+4	279	7548520968728146	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	c7bb7ff6e2e82536
+14	347	7548520969353080	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/RelayMod/Relay.o	350a2a46c5faf008
+19	356	7548520969353080	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	5d1d64e7297421b0
+365	417	7548520970134527	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+4	105	7548521399184693	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/RelayMod/Relay.o	350a2a46c5faf008
+117	207	7548521400214382	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+4	174	7548526509596443	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	5d1d64e7297421b0
+181	273	7548526510544298	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+4	101	7548528196710173	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	c7bb7ff6e2e82536
+110	201	7548528197650950	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+3	111	7548528438043677	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	c7bb7ff6e2e82536
+125	237	7548528439300961	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+4	156	7548529011901279	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	c7bb7ff6e2e82536
+170	252	7548529012988978	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+3	122	7548529412761393	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	c7bb7ff6e2e82536
+140	236	7548529414011690	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+3	253	7548530641670127	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	c7bb7ff6e2e82536
+11	300	7548530642138901	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	5d1d64e7297421b0
+344	410	7548530643393343	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+4	108	7548532831171423	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	5d1d64e7297421b0
+125	237	7548532832580295	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+4	211	7548534175136928	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	5d1d64e7297421b0
+221	316	7548534176228139	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+4	104	7548537071772748	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	5d1d64e7297421b0
+116	209	7548537072868202	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+10	715	7549258323127092	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/AlarmMod/Alarm.o	c7bb7ff6e2e82536
+481	728	7549258323263552	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/HAL/RelayMod/Relay.o	350a2a46c5faf008
+613	740	7549258323401767	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	5d1d64e7297421b0
+552	760	7549258323609510	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/MCAL/GPIO/GPIO.o	c9aa4e5da14d304a
+765	1092	7549258326948485	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961
+1	55	7549258754918401	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Obj/main.o	5d1d64e7297421b0
+61	105	7549258755433233	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/Exe/SmartHome.out	affa57911fec961

@@ -1,3 +1,14 @@
 C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.pbi: \
+  C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\RelayMod\Relay.c \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdbool.h \
-  C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\RelayMod\Relay.c
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
+  C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib\driverlib\gpio.h \
+  C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib\driverlib\sysctl.h \
+  C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib\driverlib\debug.h \
+  C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib\inc\hw_memmap.h \
+  C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib\..\MCAL\GPIO\GPIO.h

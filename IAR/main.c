@@ -1,6 +1,14 @@
 #include "..\Drivers\MCAL\DIO\DIO.h"
 #include "..\Drivers\MCAL\UART\uart5.h"
 
+#include <stdbool.h>
+#include <stdint.h>
+#include "driverlib\gpio.h"
+#include "driverlib\sysctl.h"
+#include "..\Drivers\MCAL\GPIO\GPIO.h"
+#include "..\Drivers\HAL\RelayMod\Relay.h"
+#include "..\Drivers\HAL\AlarmMod\Alarm.h"
+
 #define SYSCTL_RCGCGPIO_REG (*((volatile uint32 *)0x400FE608))
 #define SYSCTL_PRGPIO_REG   (*((volatile uint32 *)0x400FEA08))
 
@@ -23,6 +31,34 @@ void LED_Init(void)
 
 int main(void)
 {
+  //relay , alarm testing
+  
+//    Relay_Init();
+////    DIO_Write('F', GPIO_PIN_3 | GPIO_PIN_2, 0);
+////    Alarm_Init();
+//    while(1){
+//    Relay_Toggle();
+//    Relay_Toggle();
+//
+////      Alarm_Toggle();
+////      Alarm_Toggle();
+//    }
+  
+  //gpio testing
+  
+////  DIO_Init('F', GPIO_PIN_0, GPIO_DIR_MODE_IN, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+//  DIO_Init('F', GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, GPIO_DIR_MODE_OUT, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD);
+//   DIO_Write('F', GPIO_PIN_1 | GPIO_PIN_3 | GPIO_PIN_2, 0);
+//  while (1){
+//    
+//      DIO_Write('F', GPIO_PIN_3 | GPIO_PIN_2, 1);
+//    SysCtlDelay(5000000);
+//    DIO_Write('F', GPIO_PIN_3 | GPIO_PIN_2, 0);
+//    SysCtlDelay(5000000);
+//  }
+    
+  //UART testing
+  
     UART5_Init(); // Initialize UART5
     LED_Init();   // Initialize the LED on PF1
 
