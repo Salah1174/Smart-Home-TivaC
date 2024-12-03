@@ -7,7 +7,7 @@
 #include "..\MCAL\GPIO\GPIO.h"
 
 void Relay_Init (){
-  DIO_Init('B', GPIO_PIN_0 , GPIO_DIR_MODE_OUT, GPIO_STRENGTH_10MA, GPIO_PIN_TYPE_STD);
+  DIO_Init('B', GPIO_PIN_0 , GPIO_DIR_MODE_OUT);
   
 }
 void Relay_Toggle (){
@@ -20,6 +20,6 @@ void Relay_Toggle (){
     DIO_Write( 'B' , GPIO_PIN_0 , 1);
   }
   
-  SysCtlDelay(5000000);
+  SysCtlDelay(10000000);
   
 }

@@ -59,7 +59,7 @@ void GetPeripheralAndBaseAddress(char ui8Port, uint32_t* pui32Peripheral, uint32
 }
 
 
-void DIO_Init(uint8_t ui8Port, uint8_t ui8Pins, uint32_t ui32Direction, uint32_t ui32Strength, uint32_t ui32PadType ) {
+void DIO_Init(uint8_t ui8Port, uint8_t ui8Pins, uint32_t ui32Direction ) {
     // Enable clock 
    uint32_t ui32Peripheral;
    uint32_t ui32Port;
@@ -74,8 +74,8 @@ void DIO_Init(uint8_t ui8Port, uint8_t ui8Pins, uint32_t ui32Direction, uint32_t
     GPIODirModeSet(ui32Port, ui8Pins, ui32Direction);
 
     
-    // drive strength and pad type (  GPIO_STRENGTH_2MA and GPIO_PIN_TYPE_STD push-pull for ex
-    GPIOPadConfigSet(ui32Port, ui8Pins, ui32Strength, ui32PadType);
+//    // drive strength and pad type (  GPIO_STRENGTH_2MA and GPIO_PIN_TYPE_STD push-pull for ex
+//    GPIOPadConfigSet(ui32Port, ui8Pins, ui32Strength, ui32PadType);
 
     // den
     if( ui32Direction == GPIO_DIR_MODE_OUT){
