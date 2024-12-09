@@ -1,17 +1,17 @@
-"C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\main.c"
+"C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi.dep
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi.dep
 -o
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\main.pbi
 -I
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR
 -I
-C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib\
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -19,7 +19,7 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
-C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

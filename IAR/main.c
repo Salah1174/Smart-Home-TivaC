@@ -61,19 +61,28 @@ int main(void)
   
     UART5_Init(); // Initialize UART5
     LED_Init();   // Initialize the LED on PF1
-
+    unsigned char temp = 0 ;
+    UART5_SendByte(temp);
+    //UART5_SendInteger(50);
+    
     while (1)
     {
-        uint8 receivedChar = UART5_ReceiveByte(); // Receive a character
-
-        if (receivedChar == '1') // If '1' is received
-        {
-            GPIO_PORTF_DATA_REG |= LED_PIN; // Turn on the LED
-        }
-        else if (receivedChar == '0') // If '0' is received
-        {
-            GPIO_PORTF_DATA_REG &= ~LED_PIN; // Turn off the LED
-        }
+      //UART5_SendInteger(50);
+    UART5_SendByte(temp);
+      temp++;
+//      UART5_SendByte(temp);
+      SysCtlDelay(5000000);
+//        uint8 receivedChar = UART5_ReceiveByte(); // Receive a character
+//
+//        if (receivedChar == '1') // If '1' is received
+//        {
+//            GPIO_PORTF_DATA_REG ^= LED_PIN; // Turn on the LED
+//        }
+//        else if (receivedChar == '0') // If '0' is received
+//        {
+//            GPIO_PORTF_DATA_REG &= ~LED_PIN; // Turn off the LED
+//        }
+//        
     }
     return 0;
 }

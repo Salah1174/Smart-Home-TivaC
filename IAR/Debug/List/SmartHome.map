@@ -1,29 +1,39 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  03/Dec/2024  12:44:35
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  09/Dec/2024  17:36:13
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out
+#        C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out
 #    Map file     =
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map
+#        C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map
 #    Command line =
-#        -f
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out.rsp
-#        (C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod\Alarm.o
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\DIO\DIO.o
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO\GPIO.o
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\main.o
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod\Relay.o
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart0.o
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart5.o
-#        --no_out_extension -o
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out
-#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
-#        --map
-#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map
-#        --config "C:\Program Files\IAR Systems\Embedded Workbench
+#        -f "C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out.rsp"
+#        ("C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod\Alarm.o"
+#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\DIO\DIO.o"
+#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a"
+#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO\GPIO.o"
+#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\main.o" "C:\ASU\ASU\Fall
+#        2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod\Relay.o"
+#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart0.o"
+#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart5.o"
+#        --no_out_extension -o "C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out" --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
+#        Systems\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map" --config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
 #        9.0\arm\config\linker\TexasInstruments\TM4C123GH6.icf" --semihosting
 #        --entry __iar_program_start --vfe --text_out locale)
 #
@@ -81,18 +91,19 @@ No sections matched the following patterns:
   .intvec   ro code          0x0    0x40  vector_table_M.o [10]
                           - 0x40    0x40
 
-"P1":                              0x1ec
+"P1":                              0x1e0
   .text     ro code         0x40    0xe8  uart5.o [6]
-  .text     ro code        0x128    0x7c  main.o [1]
-  .text     ro code        0x1a4    0x22  fpinit_M.o [9]
-  .text     ro code        0x1c6     0x2  vectortrap_M.o [10]
-  .text     ro code        0x1c8    0x1e  cmain.o [10]
-  .text     ro code        0x1e6     0x4  low_level_init.o [7]
-  .text     ro code        0x1ea     0x4  exit.o [7]
-  .text     ro code        0x1f0     0xa  cexit.o [10]
-  .text     ro code        0x1fc    0x14  exit.o [11]
-  .text     ro code        0x210    0x1c  cstartup_M.o [10]
-                         - 0x22c   0x1ec
+  .text     ro code        0x128    0x68  main.o [1]
+  .text     ro code        0x190     0x8  sysctl.o [8]
+  .text     ro code        0x198    0x22  fpinit_M.o [9]
+  .text     ro code        0x1ba     0x2  vectortrap_M.o [10]
+  .text     ro code        0x1bc    0x1e  cmain.o [10]
+  .text     ro code        0x1da     0x4  low_level_init.o [7]
+  .text     ro code        0x1de     0x4  exit.o [7]
+  .text     ro code        0x1e4     0xa  cexit.o [10]
+  .text     ro code        0x1f0    0x14  exit.o [11]
+  .text     ro code        0x204    0x1c  cstartup_M.o [10]
+                         - 0x220   0x1e0
 
 "P2":                             0x1000
   CSTACK             0x2000'0000  0x1000  <Block>
@@ -103,7 +114,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-        0x22c     0x3'ffff  0x3'fdd4
+        0x220     0x3'ffff  0x3'fde0
   0x2000'1000  0x2000'7fff    0x7000
 
 
@@ -118,28 +129,28 @@ command line/config:
     ----------------------------------
     Total:
 
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj: [1]
-    main.o                124
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj: [1]
+    main.o                104
     ----------------------------------
-    Total:                124
+    Total:                104
 
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod: [2]
-    ----------------------------------
-    Total:
-
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod: [3]
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod: [2]
     ----------------------------------
     Total:
 
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\DIO: [4]
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod: [3]
     ----------------------------------
     Total:
 
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO: [5]
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\DIO: [4]
     ----------------------------------
     Total:
 
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART: [6]
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO: [5]
+    ----------------------------------
+    Total:
+
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART: [6]
     uart5.o               232
     ----------------------------------
     Total:                232
@@ -151,8 +162,9 @@ dl7M_tln.a: [7]
     Total:                  8
 
 driverlib.a: [8]
+    sysctl.o                8
     ----------------------------------
-    Total:
+    Total:                  8
 
 m7M_tls.a: [9]
     fpinit_M.o             34
@@ -176,7 +188,7 @@ shb_l.a: [11]
     Gaps                    4
     Linker created               4'096
 --------------------------------------
-    Grand Total:          556    4'096
+    Grand Total:          544    4'096
 
 
 *******************************************************************************
@@ -185,48 +197,49 @@ shb_l.a: [11]
 
 Entry                     Address  Size  Type      Object
 -----                     -------  ----  ----      ------
-?main                       0x1c9        Code  Gb  cmain.o [10]
-BusFault_Handler            0x1c7        Code  Wk  vectortrap_M.o [10]
+?main                       0x1bd        Code  Gb  cmain.o [10]
+BusFault_Handler            0x1bb        Code  Wk  vectortrap_M.o [10]
 CSTACK$$Base          0x2000'0000         --   Gb  - Linker created -
 CSTACK$$Limit         0x2000'1000         --   Gb  - Linker created -
-DebugMon_Handler            0x1c7        Code  Wk  vectortrap_M.o [10]
-HardFault_Handler           0x1c7        Code  Wk  vectortrap_M.o [10]
+DebugMon_Handler            0x1bb        Code  Wk  vectortrap_M.o [10]
+HardFault_Handler           0x1bb        Code  Wk  vectortrap_M.o [10]
 LED_Init                    0x129  0x2e  Code  Gb  main.o [1]
-MemManage_Handler           0x1c7        Code  Wk  vectortrap_M.o [10]
-NMI_Handler                 0x1c7        Code  Wk  vectortrap_M.o [10]
-PendSV_Handler              0x1c7        Code  Wk  vectortrap_M.o [10]
+MemManage_Handler           0x1bb        Code  Wk  vectortrap_M.o [10]
+NMI_Handler                 0x1bb        Code  Wk  vectortrap_M.o [10]
+PendSV_Handler              0x1bb        Code  Wk  vectortrap_M.o [10]
 Region$$Table$$Base           0x0         --   Gb  - Linker created -
 Region$$Table$$Limit          0x0         --   Gb  - Linker created -
-SVC_Handler                 0x1c7        Code  Wk  vectortrap_M.o [10]
-SysTick_Handler             0x1c7        Code  Wk  vectortrap_M.o [10]
+SVC_Handler                 0x1bb        Code  Wk  vectortrap_M.o [10]
+SysCtlDelay                 0x191   0x8  Code  Gb  sysctl.o [8]
+SysTick_Handler             0x1bb        Code  Wk  vectortrap_M.o [10]
 UART5_Init                   0x41  0x9c  Code  Gb  uart5.o [6]
-UART5_ReceiveByte            0xdd  0x10  Code  Gb  uart5.o [6]
-UsageFault_Handler          0x1c7        Code  Wk  vectortrap_M.o [10]
-__cmain                     0x1c9        Code  Gb  cmain.o [10]
-__exit                      0x1fd  0x14  Code  Gb  exit.o [11]
-__iar_init_vfp              0x1a5        Code  Gb  fpinit_M.o [9]
-__iar_program_start         0x211        Code  Gb  cstartup_M.o [10]
-__low_level_init            0x1e7   0x4  Code  Gb  low_level_init.o [7]
+UART5_SendByte               0xdd  0x10  Code  Gb  uart5.o [6]
+UsageFault_Handler          0x1bb        Code  Wk  vectortrap_M.o [10]
+__cmain                     0x1bd        Code  Gb  cmain.o [10]
+__exit                      0x1f1  0x14  Code  Gb  exit.o [11]
+__iar_init_vfp              0x199        Code  Gb  fpinit_M.o [9]
+__iar_program_start         0x205        Code  Gb  cstartup_M.o [10]
+__low_level_init            0x1db   0x4  Code  Gb  low_level_init.o [7]
 __vector_table                0x0        Data  Gb  vector_table_M.o [10]
-_call_main                  0x1d5        Code  Gb  cmain.o [10]
-_exit                       0x1f1        Code  Gb  cexit.o [10]
-exit                        0x1eb   0x4  Code  Gb  exit.o [7]
-main                        0x157  0x38  Code  Gb  main.o [1]
+_call_main                  0x1c9        Code  Gb  cmain.o [10]
+_exit                       0x1e5        Code  Gb  cexit.o [10]
+exit                        0x1df   0x4  Code  Gb  exit.o [7]
+main                        0x157  0x26  Code  Gb  main.o [1]
 
 
-[1] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj
-[2] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod
-[3] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod
-[4] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\DIO
-[5] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO
-[6] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART
+[1] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj
+[2] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod
+[3] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod
+[4] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\DIO
+[5] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO
+[6] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART
 [7] = dl7M_tln.a
 [8] = driverlib.a
 [9] = m7M_tls.a
 [10] = rt7M_tl.a
 [11] = shb_l.a
 
-    556 bytes of readonly  code memory
+    544 bytes of readonly  code memory
   4'096 bytes of readwrite data memory
 
 Errors: none
