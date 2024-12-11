@@ -2865,15 +2865,12 @@
     <group>
         <name>MCAL</name>
         <group>
-            <name>DIO</name>
+            <name>ADC</name>
             <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\DIO\bitwise_operations.h</name>
+                <name>$PROJ_DIR$\..\Drivers\MCAL\ADC\ADC.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\DIO\DIO.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\DIO\DIO.h</name>
+                <name>$PROJ_DIR$\..\Drivers\MCAL\ADC\ADC.h</name>
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\MCAL\DIO\tm4c123gh6pm.h</name>

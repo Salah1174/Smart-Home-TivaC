@@ -1,5 +1,5 @@
 C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi: \
-  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\tm4c123gh6pm_registers.h \
-  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\std_types.h \
-  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.h \
-  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c
+  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c \
+  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART/uart5.h \
+  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART/std_types.h \
+  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART/tm4c123gh6pm_registers.h
