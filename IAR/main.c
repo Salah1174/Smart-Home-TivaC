@@ -1,36 +1,52 @@
-#include "..\Drivers\MCAL\DIO\DIO.h"
-#include "..\Drivers\MCAL\UART\uart5.h"
+//#include "..\Drivers\MCAL\DIO\DIO.h"
+//#include "..\Drivers\MCAL\UART\uart5.h"
+#include "..\Drivers\MCAL\UART\uart0.h"
+#include "..\Drivers\MCAL\ADC\ADC.h"
+
 
 #include <stdbool.h>
 #include <stdint.h>
+#include <stdio.h>
 #include "driverlib\gpio.h"
 #include "driverlib\sysctl.h"
 #include "..\Drivers\MCAL\GPIO\GPIO.h"
-#include "..\Drivers\HAL\RelayMod\Relay.h"
-#include "..\Drivers\HAL\AlarmMod\Alarm.h"
-
-#define SYSCTL_RCGCGPIO_REG (*((volatile uint32 *)0x400FE608))
-#define SYSCTL_PRGPIO_REG   (*((volatile uint32 *)0x400FEA08))
-
-#define GPIO_PORTF_BASE       0x40025000
-#define GPIO_PORTF_DEN_REG    (*((volatile uint32 *)(GPIO_PORTF_BASE + 0x51C)))
-#define GPIO_PORTF_DIR_REG    (*((volatile uint32 *)(GPIO_PORTF_BASE + 0x400)))
-#define GPIO_PORTF_DATA_REG   (*((volatile uint32 *)(GPIO_PORTF_BASE + 0x3FC)))
-
-#define LED_PIN 0x02 // PF1
-
-void LED_Init(void)
-{
-    SYSCTL_RCGCGPIO_REG |= 0x20; // Enable clock for GPIO Port F
-    while (!(SYSCTL_PRGPIO_REG & 0x20))
-        ; // Wait until Port F is ready
-
-    GPIO_PORTF_DEN_REG |= LED_PIN; // Enable digital functionality on PF1
-    GPIO_PORTF_DIR_REG |= LED_PIN; // Set PF1 as output
-}
+//#include "..\Drivers\HAL\RelayMod\Relay.h"
+//#include "..\Drivers\HAL\AlarmMod\Alarm.h"
 
 int main(void)
 {
+  float temperature;
+  char buffer[50];
+  int Temp_int;
+  UART0_Init();
+  ADC1_Init();
+//    UART5_Init(); // Initialize UART5
+//    LED_Init();   // Initialize the LED on PF1
+//    unsigned char temp = 0 ;
+//    UART5_SendByte(temp);
+    //UART5_SendInteger(50);
+    uint32_t ADC_Value;
+    while (1)
+    {
+        
+      ADC_Value = ADC1_ReadValue();
+      float voltage = ((ADC_Value* 3.3)/4095.0);
+      if (voltage < 0)
+      {
+        voltage = 0.0;
+      }
+//      temperature = voltage *100.0;
+//      Temp_int = temperature;
+//      voltage = voltage - 0.20;
+      sprintf(buffer, "Voltage: %d V\n", voltage);
+      UART0_SendString(buffer);
+//      UART0_SendInteger(ADC_Value);
+//      UART0_SendByte('\n');
+//      SysCtlDelay(10000000);
+        for (volatile int i = 0; i < 2000000; i++);
+    }
+    return 0;
+}
   //relay , alarm testing
   
 //    Relay_Init();
@@ -58,22 +74,18 @@ int main(void)
 //  }
     
   //UART testing
-  
-    UART5_Init(); // Initialize UART5
-    LED_Init();   // Initialize the LED on PF1
-
-    while (1)
-    {
-        uint8 receivedChar = UART5_ReceiveByte(); // Receive a character
-
-        if (receivedChar == '1') // If '1' is received
-        {
-            GPIO_PORTF_DATA_REG |= LED_PIN; // Turn on the LED
-        }
-        else if (receivedChar == '0') // If '0' is received
-        {
-            GPIO_PORTF_DATA_REG &= ~LED_PIN; // Turn off the LED
-        }
-    }
-    return 0;
-}
+      //UART5_SendInteger(50);
+//    UART5_SendByte(temp);
+//      temp++;
+//      UART5_SendByte(temp);
+      
+//        uint8 receivedChar = UART5_ReceiveByte(); // Receive a character
+//
+//        if (receivedChar == '1') // If '1' is received
+//        {
+//            GPIO_PORTF_DATA_REG ^= LED_PIN; // Turn on the LED
+//        }
+//        else if (receivedChar == '0') // If '0' is received
+//        {
+//            GPIO_PORTF_DATA_REG &= ~LED_PIN; // Turn off the LED
+//        }
