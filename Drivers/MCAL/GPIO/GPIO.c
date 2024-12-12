@@ -5,6 +5,8 @@
 #include "driverlib\sysctl.h"
 #include "driverlib\debug.h"
 #include "inc\hw_memmap.h"
+#include "inc/hw_gpio.h"
+#include "inc/hw_types.h"
 
 uint32_t GetPortBaseAddress(char ui8Port) {
     switch (ui8Port) {
@@ -67,7 +69,22 @@ void DIO_Init(uint8_t ui8Port, uint8_t ui8Pins, uint32_t ui32Direction ) {
     SysCtlPeripheralEnable(ui32Peripheral);
     while(!SysCtlPeripheralReady(ui32Peripheral)) {} 
     
-    // unlock
+    // unlock ( more ports' special/locked pins needed ? )                                                      //needs to be tested
+    if(ui8Port == 'F' && ui8Pins == GPIO_PIN_0 ){
+      
+      // unlock & change into gpio input
+      HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
+            HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x01;
+      //lock again     
+      HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
+            HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x00;
+      HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = 0;
+  
+      GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, (GPIO_PIN_0 | GPIO_PIN_4));
+            
+            
+    }
+
 //    GPIOUnlockPin(ui32Port, ui8Pins);
 
     //dir

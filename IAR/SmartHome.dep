@@ -1,82 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>5</fileVersion>
-    <fileChecksum>3227374325</fileChecksum>
+    <fileChecksum>1340481176</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\..\Drivers\HAL\AlarmMod\Alarm.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\HAL\AlarmMod\Alarm.o</file>
+            <file>$PROJ_DIR$\main.c</file>
             <file>$PROJ_DIR$\..\Drivers\HAL\RelayMod\Relay.c</file>
             <file>$PROJ_DIR$\..\Drivers\MCAL\ADC\ADC.c</file>
-            <file>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.h</file>
-            <file>$PROJ_DIR$\..\Drivers\MCAL\ADC\ADC.h</file>
-            <file>$PROJ_DIR$\..\..\..\Documents\YA5TAAAAY\embedded\labs\lab 6 (Adavnced GPIO lab 4)\types.h</file>
             <file>$PROJ_DIR$\..\Drivers\MCAL\UART\uart0.c</file>
-            <file>$PROJ_DIR$\..\Drivers\MCAL\DIO\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\..\Drivers\HAL\AlarmMod\Alarm.c</file>
             <file>$PROJ_DIR$\..\Drivers\MCAL\UART\std_types.h</file>
-            <file>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a</file>
-            <file>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.c</file>
-            <file>$PROJ_DIR$\..\Drivers\MCAL\UART\uart0.h</file>
-            <file>$PROJ_DIR$\..\Drivers\MCAL\UART\uart5.c</file>
+            <file>$PROJ_DIR$\..\Drivers\HAL\RelayMod\Relay.h</file>
+            <file>$PROJ_DIR$\..\..\..\Documents\YA5TAAAAY\embedded\labs\lab 6 (Adavnced GPIO lab 4)\types.h</file>
+            <file>$PROJ_DIR$\..\Drivers\HAL\AlarmMod\Alarm.h</file>
             <file>$PROJ_DIR$\..\Drivers\MCAL\UART\uart5.h</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\..\Drivers\MCAL\UART\tm4c123gh6pm_registers.h</file>
+            <file>$PROJ_DIR$\..\Drivers\MCAL\DIO\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\..\Drivers\MCAL\UART\uart5.c</file>
+            <file>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a</file>
             <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\Debug\List\SmartHome.map</file>
-            <file>$PROJ_DIR$\..\Drivers\TivaLib\inc\hw_memmap.h</file>
-            <file>$PROJ_DIR$\Debug\Exe\SmartHome.out</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\debug.h</file>
-            <file>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\sysctl.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\..\Drivers\MCAL\ADC\tm4c123gh6pm.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
+            <file>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.c</file>
             <file>$PROJ_DIR$\Debug\Obj\HAL\RelayMod\Relay.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\MCAL\GPIO\GPIO.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\HAL\AlarmMod\Alarm.o</file>
+            <file>$PROJ_DIR$\..\Drivers\MCAL\ADC\ADC.h</file>
+            <file>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.h</file>
+            <file>$PROJ_DIR$\..\Drivers\MCAL\UART\tm4c123gh6pm_registers.h</file>
+            <file>$PROJ_DIR$\..\Drivers\MCAL\UART\uart0.h</file>
             <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\MCAL\ADC\ADC.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\MCAL\UART\uart5.o</file>
             <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
             <file>$PROJ_DIR$\Debug\Obj\MCAL\UART\uart0.o</file>
             <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\MCAL\UART\uart5.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\MCAL\ADC\ADC.o</file>
-            <file>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\gpio.h</file>
+            <file>$PROJ_DIR$\Debug\List\SmartHome.map</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Exe\SmartHome.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\..\Drivers\MCAL\ADC\tm4c123gh6pm.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
+            <file>$PROJ_DIR$\Debug\Obj\MCAL\GPIO\GPIO.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\HAL\AlarmMod\Alarm.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 34</file>
-                </tool>
-            </outputs>
+            <name>$PROJ_DIR$\main.c</name>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 3 22 43 23 19 28 29 17 40 32 24 26</file>
+                    <file> 33 41 34 23 0 15 32 29 37 18 7 21</file>
                 </tool>
             </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\..\Drivers\HAL\RelayMod\Relay.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 31</file>
-                </tool>
-            </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 3 22 43 23 19 28 29 17 40 32 24 26</file>
+                    <file> 33 41 34 23 0 32 37</file>
                 </tool>
             </inputs>
         </file>
@@ -85,13 +71,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 42</file>
+                    <file> 25</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 4 27 3 28 29 17 32 24 26</file>
+                    <file> 33 41 34 0 32 37 18 38 19</file>
                 </tool>
             </inputs>
         </file>
@@ -100,28 +86,22 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 37</file>
+                    <file> 28</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 8 15 11</file>
+                    <file> 7 20 21</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 33</file>
-                </tool>
-            </outputs>
+            <name>$PROJ_DIR$\..\Drivers\HAL\AlarmMod\Alarm.c</name>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 22 43 23 19 28 29 17 40 32 24 26</file>
+                    <file> 33 41 34 23 0 32 37</file>
                 </tool>
             </inputs>
         </file>
@@ -130,28 +110,22 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 41</file>
+                    <file> 26</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 8 15 13</file>
+                    <file> 7 20 11</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 39</file>
-                </tool>
-            </outputs>
+            <name>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.c</name>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 4 3 8 11 43 23 28 29 17 40 32 16 24 38 26</file>
+                    <file> 33 41 34 23 0 32 37</file>
                 </tool>
             </inputs>
         </file>
@@ -160,7 +134,7 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 20 18</file>
+                    <file> 36 30</file>
                 </tool>
             </outputs>
         </file>
@@ -169,16 +143,44 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 18</file>
+                    <file> 30</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 9 34 31 42 33 37 41 39 30 36 21 25 35</file>
+                    <file> 14 1 17 25 40 28 26 24 39 27 31 35 22</file>
                 </tool>
             </inputs>
         </file>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\main.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Drivers\HAL\RelayMod\Relay.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Drivers\MCAL\ADC\ADC.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart0.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Drivers\HAL\AlarmMod\Alarm.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart5.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
         <forcedrebuild>
             <name>[REBUILD_ALL]</name>
         </forcedrebuild>
