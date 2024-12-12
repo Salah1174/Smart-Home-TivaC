@@ -32,3 +32,45 @@
 54	65	7555826304886602	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	b5eb17feb6e5b21
 68	110	7555826305299259	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	ef872207319b3a64
 114	638	7555826310423805	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	f3d296050828e037
+3	144	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.xcl	702693362952e7
+5	154	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.xcl	93cee695aa286c7d
+7	164	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.xcl	b6654ffd37135c4f
+1	171	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.xcl	5bc35165caedbe8f
+13	180	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.xcl	7ac7374e7388545b
+10	190	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.xcl	6d6e87b4e46cf1de
+16	198	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.xcl	94eb133046d2187
+152	259	7557037403721087	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.pbi	3afa2e3e648249ce
+169	271	7557037403881221	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.pbi	6b05ce3b3c85480d
+161	274	7557037403721087	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.pbi	cb58b561f1ae2372
+178	285	7557037403881221	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.pbi	eb43b004624f812f
+196	297	7557037404193780	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	20c4698d1778b7fe
+300	309	7557037404506290	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	1d4f870f22077f92
+204	333	7557037404506290	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.pbi	c0b7ae8b6c6f7ced
+335	363	7557037405138025	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part0.pbi	3f34dd2f33d93a2f
+187	379	7557037404981111	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.pbi	ee0316fd7fdb03ca
+381	393	7557037405450046	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part1.pbi	8a9fc371520072f6
+397	424	7557037405763042	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	5c8d2268a4ebade
+428	934	7557037410629951	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	53da41a63973ff23
+1	89	7557037461905184	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.pbi	ee0316fd7fdb03ca
+93	105	7557037462305588	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part1.pbi	8a9fc371520072f6
+110	139	7557037462680722	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	5c8d2268a4ebade
+144	675	7557037467700764	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	53da41a63973ff23
+14	154	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.xcl	47462232aa060c9e
+1	164	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.xcl	882593c488c51ceb
+5	173	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.xcl	c3fa22a472548575
+10	182	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.xcl	79ee30b447bb45ec
+8	190	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.xcl	5473130ae96ae679
+17	199	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.xcl	2bea67789ac8470b
+21	209	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.xcl	ead49c0757216dfa
+161	274	7557037772868579	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.pbi	ee0316fd7fdb03ca
+171	283	7557037772967233	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.pbi	3afa2e3e648249ce
+180	289	7557037773068659	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.pbi	eb43b004624f812f
+188	292	7557037773068659	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.pbi	cb58b561f1ae2372
+207	308	7557037773267759	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.pbi	6b05ce3b3c85480d
+311	325	7557037773768543	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part1.pbi	8a9fc371520072f6
+216	349	7557037773748484	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.pbi	c0b7ae8b6c6f7ced
+353	391	7557037774386744	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part0.pbi	3f34dd2f33d93a2f
+197	397	7557037774168660	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	20c4698d1778b7fe
+400	411	7557037774566873	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	1d4f870f22077f92
+414	452	7557037775029595	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	5c8d2268a4ebade
+457	1040	7557037780580557	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	53da41a63973ff23

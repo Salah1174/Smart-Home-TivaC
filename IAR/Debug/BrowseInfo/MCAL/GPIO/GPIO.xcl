@@ -1,17 +1,19 @@
-"C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\GPIO\GPIO.c"
+"C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\GPIO\GPIO.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\GPIO\GPIO.pbi.dep
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\GPIO\GPIO.pbi.dep
 -o
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\GPIO\GPIO.pbi
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\GPIO\GPIO.pbi
 -I
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\GPIO
+C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\GPIO
 -I
 C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib\
+-I
+C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -20,6 +22,8 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 -I
 C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib
+-I
+C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0

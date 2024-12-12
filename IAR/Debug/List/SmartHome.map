@@ -1,39 +1,29 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  11/Dec/2024  03:10:30
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  12/Dec/2024  12:49:36
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
-#        C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out
 #    Map file     =
-#        C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map
 #    Command line =
-#        -f "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out.rsp"
-#        ("C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC\ADC.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod\Alarm.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO\GPIO.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\main.o" "C:\ASU\ASU\Fall
-#        2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod\Relay.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart0.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart5.o"
-#        --no_out_extension -o "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out" --redirect
-#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map" --config
-#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        -f
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out.rsp
+#        (C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC\ADC.o
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod\Alarm.o
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO\GPIO.o
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\main.o
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod\Relay.o
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart0.o
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart5.o
+#        --no_out_extension -o
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out
+#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
+#        --map
+#        C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
 #        9.0\arm\config\linker\TexasInstruments\TM4C123GH6.icf" --semihosting
 #        --entry __iar_program_start --vfe --text_out locale)
 #
@@ -169,29 +159,29 @@ command line/config:
     ------------------------------------------------
     Total:
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj: [1]
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj: [1]
     main.o                     128       16
     ------------------------------------------------
     Total:                     128       16
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod: [2]
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod: [2]
     ------------------------------------------------
     Total:
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod: [3]
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod: [3]
     ------------------------------------------------
     Total:
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC: [4]
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC: [4]
     ADC.o                      228
     ------------------------------------------------
     Total:                     228
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO: [5]
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO: [5]
     ------------------------------------------------
     Total:
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART: [6]
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART: [6]
     uart0.o                    268
     ------------------------------------------------
     Total:                     268
@@ -347,12 +337,12 @@ strchr                        0xf61         Code  Gb  strchr.o [10]
 strlen                        0xfb9         Code  Gb  strlen.o [10]
 
 
-[1] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj
-[2] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod
-[3] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod
-[4] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC
-[5] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO
-[6] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART
+[1] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj
+[2] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod
+[3] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod
+[4] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC
+[5] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO
+[6] = C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART
 [7] = dl7M_tln.a
 [8] = driverlib.a
 [9] = m7M_tls.a
