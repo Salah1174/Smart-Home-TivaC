@@ -15,12 +15,13 @@
 
 int main(void)
 {
-    
+  
+   
     Alarm_Init();
     ADC1_Init();
     UART5_Init(); // Initialize UART5
     DIO_Init('F',GPIO_PIN_4,GPIO_DIR_MODE_IN);
-    
+    DIO_Init('F',GPIO_PIN_0,GPIO_DIR_MODE_IN);
     DIO_Init('F',GPIO_PIN_1,GPIO_DIR_MODE_OUT);
     DIO_Init('F',GPIO_PIN_2,GPIO_DIR_MODE_OUT);
     uint32_t ADC_Value;
@@ -50,10 +51,12 @@ int main(void)
             Alarm_Toggle();
       }
       
-      bool on_switch = GPIO_PinRead('F',GPIO_PIN_4);
-//      bool on_relay = GPIO_PinRead('F',GPIO_PIN_1);
-//      SysCtlDelay(10000000);
-//      for (volatile int i = 0; i < 5000000; i++);
+      
+      
+      bool on_switch = (GPIO_PinRead('F',GPIO_PIN_4)) ^ (GPIO_PinRead('F',GPIO_PIN_0)); 
+      for (volatile int i = 0; i < 500000; i++);
+      
+     
       if(on_switch){
         DIO_Write('F',GPIO_PIN_2,1);
       }
@@ -65,8 +68,8 @@ int main(void)
       
       if(on)
         {
-            on = !(on);
-          DIO_Write('F',GPIO_PIN_1,on);       
+//            on = !(on);
+          DIO_Write('F',GPIO_PIN_1,GPIO_PinRead('F',GPIO_PIN_1)^GPIO_PIN_1);       
         }
       else
       {
@@ -74,15 +77,29 @@ int main(void)
 
          UART5_SendString(buffer);
       }
-//      
-//      
-//      
-      for (volatile int i = 0; i < 1000000; i++);
+      
+      
+      
+      for (volatile int i = 0; i < 500000; i++);
 
     }
     
     
     return 0;
+    
+    //    DIO_Init('F',GPIO_PIN_4,GPIO_DIR_MODE_IN);
+//    DIO_Init('F',GPIO_PIN_0,GPIO_DIR_MODE_IN);
+//    DIO_Init('F',GPIO_PIN_1,GPIO_DIR_MODE_OUT);
+//    DIO_Init('F',GPIO_PIN_2,GPIO_DIR_MODE_OUT);
+//    DIO_Write('F',GPIO_PIN_2,0); 
+//    bool on_switch4 = GPIO_PinRead('F',GPIO_PIN_4);
+//    bool on_switch0 = GPIO_PinRead('F',GPIO_PIN_0);
+////    for (volatile int i = 0; i < 500000; i++);
+//      if(on_switch4 | on_switch0){
+////        on_switch=!on_switch;
+//        DIO_Write('F',GPIO_PIN_2,1);
+//      }
+ 
 }
 
 //    

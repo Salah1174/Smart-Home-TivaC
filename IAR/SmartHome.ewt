@@ -2884,9 +2884,6 @@
             <file>
                 <name>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.h</name>
             </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Documents\YA5TAAAAY\embedded\labs\lab 6 (Adavnced GPIO lab 4)\types.h</name>
-            </file>
         </group>
         <group>
             <name>UART</name>

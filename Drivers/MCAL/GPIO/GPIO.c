@@ -75,22 +75,7 @@ void DIO_Init(uint8_t ui8Port, uint8_t ui8Pins, uint32_t ui32Direction)
     {
     }
 
-    // unlock ( more ports' special/locked pins needed ? )                                                      //needs to be tested
-    if (ui8Port == 'F' && ui8Pins == GPIO_PIN_0)
-    {
 
-        // unlock & change into gpio input
-        HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
-        HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x01;
-        // lock again
-        HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
-        HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x00;
-        HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = 0;
-
-        GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_0 );
-    }
-
-    //    GPIOUnlockPin(ui32Port, ui8Pins);
 
     // dir
     GPIODirModeSet(ui32Port, ui8Pins, ui32Direction);
@@ -105,7 +90,43 @@ void DIO_Init(uint8_t ui8Port, uint8_t ui8Pins, uint32_t ui32Direction)
     }
     else if (ui32Direction == GPIO_DIR_MODE_IN)
     {
+      if( ui8Port == 'F' && ui8Pins == GPIO_PIN_4){
+        volatile uint32_t* purReg = (uint32_t*)(GetPortBaseAddress('F') + GPIO_O_PUR);
         GPIOPinTypeGPIOInput(ui32Port, ui8Pins);
+        *purReg = 0x11;
+         volatile uint32_t* pdrReg = (uint32_t*)(GPIO_PORTF_BASE + GPIO_O_PDR);
+        *pdrReg= 0x00;
+      }
+      else if (ui8Port == 'F' && ui8Pins == GPIO_PIN_0)
+    {
+
+        // unlock & change into gpio input
+//        GPIOUnlockPin('F', GPIO_PIN_0)
+        HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
+        HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x1F;
+        
+        //set 
+       volatile uint32_t* purReg = (uint32_t*)(GetPortBaseAddress('F') + GPIO_O_PUR);
+        *purReg = 0x11;
+         volatile uint32_t* pdrReg = (uint32_t*)(GPIO_PORTF_BASE + GPIO_O_PDR);
+        *pdrReg= 0x00;
+        GPIODirModeSet(ui32Port, ui8Pins, ui32Direction);
+        GPIOPinTypeGPIOInput('F', GPIO_PIN_0);
+        HWREG(GPIO_PORTF_BASE + GPIO_O_DEN) |= 0x01;
+
+        // lock again
+        HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
+        HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x00;
+        HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = 0;
+
+        
+        
+//        GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_0 );
+        
+    }
+      else{
+           GPIOPinTypeGPIOInput(ui32Port, ui8Pins);
+      }
     }
 }
 
@@ -134,13 +155,4 @@ uint8_t GPIO_PinRead(uint8_t ui8Port, uint8_t ui8Pin)
     return (GPIOPinRead(ui32Port, ui8Pin) ) ? 1 : 0;  //& ui8Pin
 }
 
-void GPIO_WritePort(uint32_t ui32Port, uint8_t ui8Value)
-{
-    GPIOPinWrite(ui32Port, 0xFF, ui8Value);
-//    return 0;
-}
 
-uint8_t GPIO_ReadPort(uint32_t ui32Port)
-{
-    return GPIOPinRead(ui32Port, 0xFF);
-}

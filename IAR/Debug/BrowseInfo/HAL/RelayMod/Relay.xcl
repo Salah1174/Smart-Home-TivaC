@@ -1,15 +1,15 @@
-"C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\HAL\RelayMod\Relay.c"
+"C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\RelayMod\Relay.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.pbi.dep
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.pbi.dep
 -o
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.pbi
+C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\HAL\RelayMod\Relay.pbi
 -I
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\HAL\RelayMod
+C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\HAL\RelayMod
 -I
 C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib\
 -I

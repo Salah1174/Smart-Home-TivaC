@@ -652,7 +652,7 @@
             <data>
                 <extensions></extensions>
                 <cmdline></cmdline>
-                <hasPrio>48</hasPrio>
+                <hasPrio>128</hasPrio>
                 <buildSequence>inputOutputBased</buildSequence>
             </data>
         </settings>
@@ -2128,9 +2128,6 @@
             </file>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\MCAL\GPIO\GPIO.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\..\..\Documents\YA5TAAAAY\embedded\labs\lab 6 (Adavnced GPIO lab 4)\types.h</name>
             </file>
         </group>
         <group>
