@@ -1,76 +1,30 @@
 # ninja log v5
-35	176	7555635456683635	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.pbi	fceebc474224ea87
-128	686	7555809472338480	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	f3d296050828e037
-2	212	7554598630000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.xcl	2328c593ef74fbb0
 14	223	7554598630000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/DIO/DIO.xcl	4c054f8c0b6c38a4
-28	201	7554598630000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.xcl	a7c625c6bb777df0
-34	258	7554598630000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.xcl	b12089de4fec7cd1
-243	325	7555801580505388	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part0.pbi	42dbf4d9f38f30ee
-20	234	7554598630000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.xcl	f10f0eb40c4ce0f4
+45	413	7558022750000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.xcl	68813dc8f40c501b
+84	544	7560597714559072	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	f3d296050828e037
+2	70	7560433122099679	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.pbi	fceebc474224ea87
+131	462	7558022750000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.xcl	3d2673f878d3ec0e
+127	484	7558022750000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.xcl	4ab68261dbabaf5e
+74	148	7560433122883916	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part0.pbi	42dbf4d9f38f30ee
+135	473	7558022750000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.xcl	2803a4e580e902df
 49	146	7555635456368979	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/DIO/DIO.pbi	c9bed5787fae4587
-1	48	7555809466369663	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	2b966796b6ecb7d5
-39	183	7555635456683635	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.pbi	6aef439f783432f2
-44	158	7555635456588541	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.pbi	4dfa698bfb109714
-51	165	7555635456588541	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.pbi	7731b73dc1854b59
-71	123	7555809466998198	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	ef872207319b3a64
-8	186	7554598630000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.xcl	8d10f3b8e3894932
-42	245	7554598630000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.xcl	5395478f09080114
-29	172	7555635456683635	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.pbi	e31a26fd2aa89cc0
-52	68	7555809466527545	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	b5eb17feb6e5b21
-7	33	7555759547806852	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part1.pbi	f579d9b2dcd3d6ac
-3	185	7555716430000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.xcl	a43353637d4fcd33
-1	227	7555801579406593	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.pbi	3ca0cea9849dabaf
-1	52	7555824275813753	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	2b966796b6ecb7d5
-56	74	7555824276127041	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	b5eb17feb6e5b21
-80	118	7555824276510011	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	ef872207319b3a64
-124	876	7555824283862653	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	f3d296050828e037
-3	62	7555824536546855	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	2b966796b6ecb7d5
-66	82	7555824536704706	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	b5eb17feb6e5b21
-87	138	7555824537322099	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	ef872207319b3a64
-151	768	7555824543266107	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	f3d296050828e037
-2	51	7555826304728021	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	2b966796b6ecb7d5
-54	65	7555826304886602	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	b5eb17feb6e5b21
-68	110	7555826305299259	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	ef872207319b3a64
-114	638	7555826310423805	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	f3d296050828e037
-3	144	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.xcl	702693362952e7
-5	154	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.xcl	93cee695aa286c7d
-7	164	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.xcl	b6654ffd37135c4f
-1	171	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.xcl	5bc35165caedbe8f
-13	180	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.xcl	7ac7374e7388545b
-10	190	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.xcl	6d6e87b4e46cf1de
-16	198	7557037400000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.xcl	94eb133046d2187
-152	259	7557037403721087	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.pbi	3afa2e3e648249ce
-169	271	7557037403881221	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.pbi	6b05ce3b3c85480d
-161	274	7557037403721087	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.pbi	cb58b561f1ae2372
-178	285	7557037403881221	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.pbi	eb43b004624f812f
-196	297	7557037404193780	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	20c4698d1778b7fe
-300	309	7557037404506290	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	1d4f870f22077f92
-204	333	7557037404506290	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.pbi	c0b7ae8b6c6f7ced
-335	363	7557037405138025	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part0.pbi	3f34dd2f33d93a2f
-187	379	7557037404981111	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.pbi	ee0316fd7fdb03ca
-381	393	7557037405450046	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part1.pbi	8a9fc371520072f6
-397	424	7557037405763042	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	5c8d2268a4ebade
-428	934	7557037410629951	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	53da41a63973ff23
-1	89	7557037461905184	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.pbi	ee0316fd7fdb03ca
-93	105	7557037462305588	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part1.pbi	8a9fc371520072f6
-110	139	7557037462680722	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	5c8d2268a4ebade
-144	675	7557037467700764	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	53da41a63973ff23
-14	154	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.xcl	47462232aa060c9e
-1	164	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.xcl	882593c488c51ceb
-5	173	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.xcl	c3fa22a472548575
-10	182	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.xcl	79ee30b447bb45ec
-8	190	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.xcl	5473130ae96ae679
-17	199	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.xcl	2bea67789ac8470b
-21	209	7557037770000000	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.xcl	ead49c0757216dfa
-161	274	7557037772868579	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.pbi	ee0316fd7fdb03ca
-171	283	7557037772967233	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/AlarmMod/Alarm.pbi	3afa2e3e648249ce
-180	289	7557037773068659	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.pbi	eb43b004624f812f
-188	292	7557037773068659	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.pbi	cb58b561f1ae2372
-207	308	7557037773267759	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.pbi	6b05ce3b3c85480d
-311	325	7557037773768543	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part1.pbi	8a9fc371520072f6
-216	349	7557037773748484	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.pbi	c0b7ae8b6c6f7ced
-353	391	7557037774386744	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part0.pbi	3f34dd2f33d93a2f
-197	397	7557037774168660	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	20c4698d1778b7fe
-400	411	7557037774566873	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	1d4f870f22077f92
-414	452	7557037775029595	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	5c8d2268a4ebade
-457	1040	7557037780580557	C:/Users/Salma/.vscode/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	53da41a63973ff23
+1	35	7560594635303472	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	2b966796b6ecb7d5
+482	562	7558022758376236	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart0.pbi	4dfa698bfb109714
+0	33	7560597709803654	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.pbi	6aef439f783432f2
+4	71	7560488954829008	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/UART/uart5.pbi	7731b73dc1854b59
+51	80	7560597710282028	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	ef872207319b3a64
+113	496	7558022750000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.xcl	94bd8623acc63763
+122	450	7558022750000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.xcl	a3099fff187ac57c
+506	731	7558022759790429	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/HAL/RelayMod/Relay.pbi	e31a26fd2aa89cc0
+37	54	7560594635499278	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	b5eb17feb6e5b21
+36	47	7560597709980088	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part1.pbi	f579d9b2dcd3d6ac
+118	509	7558022750000000	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.xcl	e6b506ed1b256a84
+518	742	7558022759988246	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/ADC/ADC.pbi	3ca0cea9849dabaf
+3	81	7560609870649169	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/MCAL/GPIO/GPIO.pbi	6aef439f783432f2
+85	121	7560609871065074	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part1.pbi	f579d9b2dcd3d6ac
+127	204	7560609871869565	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	ef872207319b3a64
+214	1267	7560609881876824	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	f3d296050828e037
+3	96	7560660307178847	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/main.pbi	2b966796b6ecb7d5
+105	145	7560660307591665	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome_part2.pbi	b5eb17feb6e5b21
+151	234	7560660308620964	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbd	ef872207319b3a64
+2	1095	7560660377838712	C:/ASU/ASU/Fall 2024/Intro to Embedded Systems/Smart-Home-TivaC/IAR/Debug/BrowseInfo/SmartHome.pbw	f3d296050828e037

@@ -10,13 +10,14 @@ void Alarm_Init (){
    DIO_Init('B', GPIO_PIN_1 , GPIO_DIR_MODE_OUT);
 }
 void Alarm_Toggle (){
-   bool on = GPIO_PinRead('B' , GPIO_PIN_1);
-  if( on ){
-    DIO_Write( 'B' , GPIO_PIN_1 , 0);
-  }
-  else {
+//   bool on = GPIO_PinRead('B' , GPIO_PIN_1);
     DIO_Write( 'B' , GPIO_PIN_1 , 1);
-  }
-  
+//   if( on ){
+//  }
+//  else {
+//  }
+//  
   SysCtlDelay(10000000);
+    DIO_Write( 'B' , GPIO_PIN_1 , 0);
+  
 }

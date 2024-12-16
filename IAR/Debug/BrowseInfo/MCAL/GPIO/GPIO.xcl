@@ -1,15 +1,15 @@
-"C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\GPIO\GPIO.c"
+"C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\GPIO\GPIO.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\GPIO\GPIO.pbi.dep
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\GPIO\GPIO.pbi.dep
 -o
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\GPIO\GPIO.pbi
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\GPIO\GPIO.pbi
 -I
-C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\GPIO
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\GPIO
 -I
 C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib\
 -I
