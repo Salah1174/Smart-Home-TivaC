@@ -74,8 +74,8 @@ void UART5_SendByte(uint8 data)
  */
 uint8 UART5_ReceiveByte(void)
 {
-    while (UART5_FR_REG & UART_FR_RXFE_MASK)
-        ;                       // Wait until the RX FIFO is not empty
+//    while (UART5_FR_REG & UART_FR_RXFE_MASK)
+//        ;                       // Wait until the RX FIFO is not empty
     return (uint8)UART5_DR_REG; // Return the byte from the UART Data Register
 }
 
@@ -91,6 +91,8 @@ void UART5_SendString(const uint8 *pData)
         UART5_SendByte(*pData); // Send each byte of the string
         pData++;
     }
+//    UART5_SendByte('\r'); // Send carriage return
+//    UART5_SendByte('\n'); // Send newline
 }
 
 /**
