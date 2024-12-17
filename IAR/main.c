@@ -15,8 +15,6 @@
 
 int main(void)
 {
-  
-   
     Alarm_Init();
     ADC1_Init();
     UART5_Init(); // Initialize UART5
@@ -27,12 +25,11 @@ int main(void)
     uint32_t ADC_Value;
     float temperature;
     uint32_t Temp_int = 0;
-    char buffer[50];
+    char buffer[5];
     DIO_Init('B',GPIO_PIN_3,GPIO_DIR_MODE_IN);
-    DIO_Write('F',GPIO_PIN_2,0); 
-    
+    DIO_Write('F',GPIO_PIN_2,0);    
     bool isDoorOpened = 0 ;
-    
+    bool UARTCon = 0;
     while (1)
     {        
       isDoorOpened = GPIO_PinRead('B',GPIO_INT_PIN_3);
@@ -44,6 +41,7 @@ int main(void)
       {
         voltage = 0.0;
       }
+      
       temperature = voltage *100.0;
       Temp_int = temperature;
       if (Temp_int >= 29)
@@ -53,31 +51,72 @@ int main(void)
       
       
       
-      bool on_switch = (GPIO_PinRead('F',GPIO_PIN_4)) ^ (GPIO_PinRead('F',GPIO_PIN_0)); 
+//      bool on_switch = (GPIO_PinRead('F',GPIO_PIN_4)) ^ (GPIO_PinRead('F',GPIO_PIN_0)); 
+
+      
+      
       for (volatile int i = 0; i < 500000; i++);
       
-     
-      if(on_switch){
-        DIO_Write('F',GPIO_PIN_2,1);
-      }
-      bool on_uart=0;
-      if (UART5_ReceiveByte()=='1'){
-      on_uart=1;
-      }
-      bool on = (on_uart)^(on_switch);
+//      if(on_switch){
+//        DIO_Write('F',GPIO_PIN_2,1);
+//      }
+//      bool on_uart=0;
+//      if (UART5_ReceiveByte()=='1'){
+//      on_uart=1;
+//      }
       
-      if(on)
+      
+      
+      bool on = GPIO_PinRead('F',GPIO_PIN_1);
+      
+//      if(UART5_ReceiveByte() == '1')
+//      {
+//        UARTCon^=1;
+//      }
+      
+//      bool PinStatus = GPIO_PinRead('F',GPIO_PIN_0);
+//      
+//      if(on&&UARTCon&&PinStatus)
+//       {
+//         DIO_Write('F',GPIO_PIN_1,0);
+//       }//off 
+//      else if(!UARTCon && PinStatus)
+//       {
+//          DIO_Write('F',GPIO_PIN_1,1);
+//       }//on
+//      else if(UARTCon && !PinStatus)
+//        {
+//          DIO_Write('F',GPIO_PIN_1,1);
+//        }//on
+//      else if(!UARTCon && !PinStatus)
+//      {
+//        DIO_Write('F',GPIO_PIN_1,0);
+//      }
+//      
+        //-> off
+      
+        if(UART5_ReceiveByte()=='1')
         {
-//            on = !(on);
-          DIO_Write('F',GPIO_PIN_1,GPIO_PinRead('F',GPIO_PIN_1)^GPIO_PIN_1);       
+          on = !on;
+          DIO_Write('F',GPIO_PIN_1,on);
         }
-      else
-      {
-        sprintf(buffer, "Door Status: %d , Temperature: %d C\n ", isDoorOpened, Temp_int);
-
+        
+         sprintf(buffer, "%d %d\n",isDoorOpened,Temp_int);
          UART5_SendString(buffer);
-      }
-      
+         for (volatile int i = 0; i < 500000; i++);
+          
+        
+        
+//      if(on)
+//        {
+//            on = !(on);
+//          DIO_Write('F',GPIO_PIN_1,on);       
+//        }
+//      else
+//      {
+//        
+//      }
+//      
       
       
       for (volatile int i = 0; i < 500000; i++);

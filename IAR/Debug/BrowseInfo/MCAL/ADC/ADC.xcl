@@ -1,15 +1,15 @@
-"C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\ADC\ADC.c"
+"C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\ADC\ADC.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\ADC\ADC.pbi.dep
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\ADC\ADC.pbi.dep
 -o
-C:\Users\Salma\.vscode\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\ADC\ADC.pbi
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\ADC\ADC.pbi
 -I
-C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\MCAL\ADC
+C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\ADC
 -I
 C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib\
 -I
