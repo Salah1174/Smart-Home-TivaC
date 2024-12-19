@@ -1,5 +1,13 @@
 C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\UART\uart5.pbi: \
-  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c \
-  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART/uart5.h \
-  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART/std_types.h \
-  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART/tm4c123gh6pm_registers.h
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdbool.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
+  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\..\GPIO\gpio.h \
+  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\tm4c123gh6pm.h \
+  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\std_types.h \
+  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.h \
+  C:\ASU\ASU\Fall\ 2024\Intro\ to\ Embedded\ Systems\Smart-Home-TivaC\Drivers\MCAL\UART\uart5.c

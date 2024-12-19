@@ -652,7 +652,7 @@
             <data>
                 <extensions></extensions>
                 <cmdline></cmdline>
-                <hasPrio>128</hasPrio>
+                <hasPrio>1</hasPrio>
                 <buildSequence>inputOutputBased</buildSequence>
             </data>
         </settings>
@@ -2098,6 +2098,33 @@
             </file>
         </group>
         <group>
+            <name>BTMod</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\BTMod\BTMod.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\BTMod\BTMod.h</name>
+            </file>
+        </group>
+        <group>
+            <name>Door</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\Door\Door.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\Door\Door.h</name>
+            </file>
+        </group>
+        <group>
+            <name>LM35</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\LM35\LM35.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\LM35\LM35.h</name>
+            </file>
+        </group>
+        <group>
             <name>RelayMod</name>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\HAL\RelayMod\Relay.c</name>
@@ -2131,6 +2158,18 @@
             </file>
         </group>
         <group>
+            <name>SysTick</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\MCAL\SysTick_Tivware\SysTick.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\MCAL\SysTick_Tivware\SysTick.h</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\MCAL\SysTick_Tivware\tm4c123gh6pm.h</name>
+            </file>
+        </group>
+        <group>
             <name>UART</name>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\MCAL\UART\std_types.h</name>
@@ -2157,5 +2196,8 @@
     </group>
     <file>
         <name>$PROJ_DIR$\main.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\startup_ewarm.c</name>
     </file>
 </project>

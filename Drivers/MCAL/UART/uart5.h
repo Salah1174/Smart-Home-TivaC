@@ -38,8 +38,9 @@
  *                            Functions Prototypes                             *
  *******************************************************************************/
 
-extern void UART5_Init(void);
+extern volatile uint8 UART5_ReceivedByte; // Variable to store received byte
 
+extern void UART5_Init(void);
 
 extern void UART5_SendByte(uint8 data);
 
