@@ -61,6 +61,9 @@
     "hw_gpio.h": "c",
     "hw_memmap.h": "c",
     "hw_types.h": "c",
-    "gpio.h": "c"
+    "gpio.h": "c",
+    "sysctl.h": "c",
+    "door.h": "c",
+    "btmod.h": "c"
   }
 }

@@ -8,11 +8,18 @@
 
 void Alarm_Init()
 {
-  DIO_Init('B', GPIO_PIN_1, GPIO_DIR_MODE_OUT);
+  DIO_Init('F', GPIO_PIN_3, GPIO_DIR_MODE_OUT);
 }
-void Alarm_Toggle()
+void Alarm_On()
 {
-  DIO_Write('B', GPIO_PIN_1, 1);
-  SysCtlDelay(10000000);
-  DIO_Write('B', GPIO_PIN_1, 0);
+  DIO_Write('F', GPIO_PIN_3, 1);
+  // SysCtlDelay(10000000);
+  // DIO_Write('F', GPIO_PIN_3, 0);
+}
+
+void Alarm_Off()
+{
+  DIO_Write('F', GPIO_PIN_3, 0);
+  // SysCtlDelay(10000000);
+  // DIO_Write('F', GPIO_PIN_3, 0);
 }

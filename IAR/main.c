@@ -10,30 +10,31 @@
 #include "driverlib\gpio.h"
 #include "driverlib\sysctl.h"
 
-//#include "tm4c123gh6pm.h"
+// #include "tm4c123gh6pm.h"
 
-
+volatile uint8_t tempStatus = 'C';
+volatile uint32_t Temp = 0;
 
 int main(void)
 {
   BTMOD_Init();
-  DIO_Init('F',GPIO_PIN_3,GPIO_DIR_MODE_OUT);
-//  DIO_Write('F',GPIO_PIN_1,1);
+  DIO_Init('F', GPIO_PIN_3, GPIO_DIR_MODE_OUT);
+  //  DIO_Write('F',GPIO_PIN_1,1);
   Relay_Init();
   LM35_Init();
   DOOR_Init();
   Alarm_Init();
   char buffer[5];
-  bool doorStatus ;
-  uint32_t Temp_int ;
+  bool doorStatus;
+  // uint8_t tempStatus = 'C';
+  // uint32_t Temp_int;
 
-  
   while (1)
   {
-   doorStatus = DOOR_Status(); 
-   Temp_int = LM35_Temp();
-   sprintf(buffer, "%d %d\n",doorStatus,Temp_int);
-   BTMOD_SendString(buffer);
-   SysCtlDelay(1000000);
+    doorStatus = DOOR_Status();
+    // Temp = LM35_Temp();
+    sprintf(buffer, "%d %d %c\n", doorStatus, Temp, tempStatus);
+    BTMOD_SendString(buffer);
+    SysCtlDelay(1000000);
   }
 }

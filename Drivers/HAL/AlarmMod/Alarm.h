@@ -2,7 +2,7 @@
 #define ALARM_H
 
 void Alarm_Init ();
-void Alarm_Toggle ();
-
+void Alarm_On ();
+void Alarm_Off();
 
 #endif

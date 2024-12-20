@@ -17,5 +17,5 @@ bool DOOR_Status(void)
         doorPreviousStatus = doorCurrentStatus;
         return doorCurrentStatus;
     }
-    // return doorStatus;
+     return doorPreviousStatus;
 }

@@ -1,15 +1,20 @@
+#include <stdint.h>
+#include <stdbool.h>
 #include "LM35.h"
 #include "..\..\MCAL\ADC\ADC.h"
 #include "..\..\Drivers\MCAL\GPIO\GPIO.h"
-#include <stdint.h>
-#include <stdbool.h>
-//#include "tm4c123gh6pm.h"
+#include "..\..\Drivers\HAL\AlarmMod\Alarm.h"
+#include "..\..\Drivers\HAL\BTMod\BTMod.h"
 #include "driverlib/sysctl.h"
 #include "driverlib/systick.h"
 #include "driverlib/gpio.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
+
+extern volatile uint8_t tempStatus;
+extern volatile uint32_t Temp;
 // #include "..\..\Drivers\MCAL\GPIO\GPIO.h"
+// #include "tm4c123gh6pm.h"
 
 void LM35_Init(void)
 {
@@ -26,16 +31,20 @@ uint32_t LM35_Temp(void)
 
 void LM35_Handler()
 {
-    uint32_t Temp = LM35_Temp();
-    if (Temp > 18)
+    Temp = LM35_Temp();
+    if (Temp >= 19)
     {
-        DIO_Write('F', 0x00000008, 1);
+        Alarm_On();
+        tempStatus = 'H';
+        SysCtlDelay(4000000);
+        // BTMOD_SendChar(tempStatus);
     }
     else
     {
-        DIO_Write('F', 0x00000008, 0);
+        Alarm_Off();
+        tempStatus = 'C';
+        SysCtlDelay(4000000);
+        // BTMOD_SendChar('C');
     }
-    // bool isOn = GPIO_PinRead('F', 0x00000008);
-    // DIO_Write('F', 0x00000008, !isOn);
     SysTickValueGet();
 }
