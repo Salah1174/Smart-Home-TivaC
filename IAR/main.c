@@ -14,27 +14,36 @@
 
 volatile uint8_t tempStatus = 'C';
 volatile uint32_t Temp = 0;
-
+volatile bool doorStatus = false;
 int main(void)
 {
-  BTMOD_Init();
-  DIO_Init('F', GPIO_PIN_3, GPIO_DIR_MODE_OUT);
-  //  DIO_Write('F',GPIO_PIN_1,1);
-  Relay_Init();
-  LM35_Init();
-  DOOR_Init();
-  Alarm_Init();
-  char buffer[5];
-  bool doorStatus;
+//    BTMOD_Init();
+//   DIO_Init('F', GPIO_PIN_3, GPIO_DIR_MODE_OUT);
+   //  DIO_Write('F',GPIO_PIN_1,1);
+//   Relay_Init();
+   LM35_Init();
+//   DOOR_Init();
+   Alarm_Init();
+//   char buffer[7];
+//   bool doorStatus;
   // uint8_t tempStatus = 'C';
   // uint32_t Temp_int;
 
   while (1)
   {
-    doorStatus = DOOR_Status();
+    // doorStatus = DOOR_Status();
     // Temp = LM35_Temp();
-    sprintf(buffer, "%d %d %c\n", doorStatus, Temp, tempStatus);
-    BTMOD_SendString(buffer);
-    SysCtlDelay(1000000);
+
+//        sprintf(buffer, "%d %d %c\n", doorStatus, Temp, tempStatus);
+//    BTMOD_SendInteger(doorStatus);
+//    BTMOD_SendChar('\n');
+    // BTMOD_SendChar(' ');
+//     BTMOD_SendInteger(Temp);
+    // BTMOD_SendChar(' ');
+    // BTMOD_SendChar(tempStatus);
+//     BTMOD_SendChar('\n');
+
+//        BTMOD_SendString(buffer);
+        SysCtlDelay(1000000);
   }
 }

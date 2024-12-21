@@ -32,7 +32,7 @@ uint32_t LM35_Temp(void)
 void LM35_Handler()
 {
     Temp = LM35_Temp();
-    if (Temp >= 19)
+    if (Temp >= 0)
     {
         Alarm_On();
         tempStatus = 'H';

@@ -7,10 +7,15 @@ void BTMOD_Init(void)
 }
 void BTMOD_SendChar(uint8_t data)
 {
-    UART5_SendChar(data);
+    UART5_SendByte(data);
 }
 
 void BTMOD_SendString(char *data)
 {
     UART5_SendString(data);
+}
+
+void BTMOD_SendInteger(int64_t sNumber)
+{
+    UART5_SendInteger(sNumber);
 }

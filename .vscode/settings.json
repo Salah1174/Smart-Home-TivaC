@@ -64,6 +64,10 @@
     "gpio.h": "c",
     "sysctl.h": "c",
     "door.h": "c",
-    "btmod.h": "c"
+    "btmod.h": "c",
+    "stdint.h": "c",
+    "uart5.h": "c",
+    "lm35.h": "c",
+    "relay.h": "c"
   }
 }
