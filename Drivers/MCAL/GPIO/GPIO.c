@@ -1,6 +1,5 @@
 #include <stdbool.h>
 #include <stdint.h>
-// #include "types.h"
 #include "driverlib\gpio.h"
 #include "driverlib\sysctl.h"
 #include "driverlib\debug.h"
@@ -75,8 +74,6 @@ void DIO_Init(uint8_t ui8Port, uint8_t ui8Pins, uint32_t ui32Direction)
     {
     }
 
-
-
     // dir
     GPIODirModeSet(ui32Port, ui8Pins, ui32Direction);
 
@@ -90,43 +87,55 @@ void DIO_Init(uint8_t ui8Port, uint8_t ui8Pins, uint32_t ui32Direction)
     }
     else if (ui32Direction == GPIO_DIR_MODE_IN)
     {
-      if( ui8Port == 'F' && ui8Pins == GPIO_PIN_4){
-        volatile uint32_t* purReg = (uint32_t*)(GetPortBaseAddress('F') + GPIO_O_PUR);
-        GPIOPinTypeGPIOInput(ui32Port, ui8Pins);
-        *purReg = 0x11;
-         volatile uint32_t* pdrReg = (uint32_t*)(GPIO_PORTF_BASE + GPIO_O_PDR);
-        *pdrReg= 0x00;
-      }
-      else if (ui8Port == 'F' && ui8Pins == GPIO_PIN_0)
-    {
+        if (ui8Port == 'F' && ui8Pins == GPIO_PIN_4)
+        {
+            volatile uint32_t *purReg = (uint32_t *)(GetPortBaseAddress('F') + GPIO_O_PUR);
+            GPIOPinTypeGPIOInput(ui32Port, ui8Pins);
+            *purReg = 0x11;
+            volatile uint32_t *pdrReg = (uint32_t *)(GPIO_PORTF_BASE + GPIO_O_PDR);
+            *pdrReg = 0x00;
+        }
+        else if (ui8Port == 'F' && ui8Pins == GPIO_PIN_0)
+        {
 
-        // unlock & change into gpio input
-//        GPIOUnlockPin('F', GPIO_PIN_0)
-        HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
-        HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x1F;
-        
-        //set 
-       volatile uint32_t* purReg = (uint32_t*)(GetPortBaseAddress('F') + GPIO_O_PUR);
-        *purReg = 0x11;
-         volatile uint32_t* pdrReg = (uint32_t*)(GPIO_PORTF_BASE + GPIO_O_PDR);
-        *pdrReg= 0x00;
-        GPIODirModeSet(ui32Port, ui8Pins, ui32Direction);
-        GPIOPinTypeGPIOInput('F', GPIO_PIN_0);
-        HWREG(GPIO_PORTF_BASE + GPIO_O_DEN) |= 0x01;
+            // unlock & change into gpio input
+            // GPIOUnlockPin('F', GPIO_PIN_0)
+            HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
+            HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x1F;
 
-        // lock again
-        HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
-        HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x00;
-        HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = 0;
+            // set
+            volatile uint32_t *purReg = (uint32_t *)(GetPortBaseAddress('F') + GPIO_O_PUR);
+            *purReg = 0x11;
+            volatile uint32_t *pdrReg = (uint32_t *)(GPIO_PORTF_BASE + GPIO_O_PDR);
+            *pdrReg = 0x00;
+            GPIODirModeSet(ui32Port, ui8Pins, ui32Direction);
+            GPIOPinTypeGPIOInput('F', GPIO_PIN_0);
+            HWREG(GPIO_PORTF_BASE + GPIO_O_DEN) |= 0x01;
 
-        
-        
-//        GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_0 );
-        
-    }
-      else{
-           GPIOPinTypeGPIOInput(ui32Port, ui8Pins);
-      }
+            // lock again
+            HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = GPIO_LOCK_KEY;
+            HWREG(GPIO_PORTF_BASE + GPIO_O_CR) = 0x00;
+            HWREG(GPIO_PORTF_BASE + GPIO_O_LOCK) = 0;
+
+            //        GPIOPinTypeGPIOInput(GPIO_PORTF_BASE, GPIO_PIN_0 );
+        }
+        else
+        {
+            // Get the base address for the pull-up resistor register
+            volatile uint32_t *purReg = (uint32_t *)(ui32Port + GPIO_O_PUR);
+
+            // Configure the pin as input
+            GPIOPinTypeGPIOInput(ui32Port, ui8Pins);
+
+            // Enable the pull-up resistor for the specified pin(s)
+            *purReg |= ui8Pins;
+
+            // Get the base address for the pull-down resistor register
+            volatile uint32_t *pdrReg = (uint32_t *)(ui32Port + GPIO_O_PDR);
+
+            // Disable the pull-down resistor for the specified pin(s)
+            *pdrReg &= ~ui8Pins;
+        }
     }
 }
 
@@ -152,7 +161,5 @@ void DIO_Write(uint8_t ui8Port, uint8_t ui8Pin, uint8_t ui8Value)
 uint8_t GPIO_PinRead(uint8_t ui8Port, uint8_t ui8Pin)
 {
     uint32_t ui32Port = GetPortBaseAddress(ui8Port);
-    return (GPIOPinRead(ui32Port, ui8Pin) ) ? 1 : 0;  //& ui8Pin
+    return (GPIOPinRead(ui32Port, ui8Pin)) ? 1 : 0; //& ui8Pin
 }
-
-

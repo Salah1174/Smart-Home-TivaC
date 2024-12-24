@@ -6,18 +6,16 @@
 #include "inc\hw_memmap.h"
 #include "..\MCAL\GPIO\GPIO.h"
 
-void Alarm_Init (){
-   DIO_Init('B', GPIO_PIN_1 , GPIO_DIR_MODE_OUT);
+void Alarm_Init()
+{
+  DIO_Init('F', GPIO_PIN_3, GPIO_DIR_MODE_OUT);
 }
-void Alarm_Toggle (){
-//   bool on = GPIO_PinRead('B' , GPIO_PIN_1);
-    DIO_Write( 'B' , GPIO_PIN_1 , 1);
-//   if( on ){
-//  }
-//  else {
-//  }
-//  
-  SysCtlDelay(10000000);
-    DIO_Write( 'B' , GPIO_PIN_1 , 0);
-  
+void Alarm_On()
+{
+  DIO_Write('F', GPIO_PIN_3, 1);
+}
+
+void Alarm_Off()
+{
+  DIO_Write('F', GPIO_PIN_3, 0);
 }

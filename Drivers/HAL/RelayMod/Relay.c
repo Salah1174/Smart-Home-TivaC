@@ -6,20 +6,8 @@
 #include "inc\hw_memmap.h"
 #include "..\MCAL\GPIO\GPIO.h"
 
-void Relay_Init (){
-  DIO_Init('B', GPIO_PIN_0 , GPIO_DIR_MODE_OUT);
-  
-}
-void Relay_Toggle (){
-  
-  bool on = GPIO_PinRead('B' , GPIO_PIN_0);
-  if( on ){
-    DIO_Write( 'B' , GPIO_PIN_0 , 0);
-  }
-  else {
-    DIO_Write( 'B' , GPIO_PIN_0 , 1);
-  }
-  
-  SysCtlDelay(10000000);
-  
+void Relay_Init()
+{
+  DIO_Init('F', GPIO_PIN_1, GPIO_DIR_MODE_OUT);
+  DIO_Init('F', GPIO_PIN_2, GPIO_DIR_MODE_OUT);
 }

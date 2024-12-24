@@ -5,6 +5,4 @@
 void ADC1_Init();
 uint32_t ADC1_ReadValue();
 
-
-
 #endif
