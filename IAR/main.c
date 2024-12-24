@@ -23,11 +23,13 @@ int main(void)
   PushButton_Init();
   char buffer[7];
   bool doorStatus = true;
+  bool lampStatus = true;
   while (1)
   {
     PushButton_Action();
     doorStatus = DOOR_Status();
-    sprintf(buffer, "%d %d %c\n", doorStatus, Temp, tempStatus);
+    lampStatus = GPIO_PinRead('F',GPIO_PIN_1);
+    sprintf(buffer, "%d %d %c %d\n", doorStatus, Temp, tempStatus,lampStatus);
     BTMOD_SendString(buffer);
     SysCtlDelay(1000000);
   }
