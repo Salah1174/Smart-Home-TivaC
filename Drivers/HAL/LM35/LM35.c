@@ -10,11 +10,8 @@
 #include "driverlib/gpio.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
-
 extern volatile uint8_t tempStatus;
 extern volatile uint32_t Temp;
-// #include "..\..\Drivers\MCAL\GPIO\GPIO.h"
-// #include "tm4c123gh6pm.h"
 
 void LM35_Init(void)
 {
@@ -32,19 +29,17 @@ uint32_t LM35_Temp(void)
 void LM35_Handler()
 {
     Temp = LM35_Temp();
-    if (Temp >= 0)
+    if (Temp >= 20)
     {
         Alarm_On();
         tempStatus = 'H';
         SysCtlDelay(4000000);
-        // BTMOD_SendChar(tempStatus);
     }
     else
     {
         Alarm_Off();
         tempStatus = 'C';
         SysCtlDelay(4000000);
-        // BTMOD_SendChar('C');
     }
     SysTickValueGet();
 }

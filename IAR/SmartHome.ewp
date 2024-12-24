@@ -2125,6 +2125,15 @@
             </file>
         </group>
         <group>
+            <name>PushButton</name>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\PushButton\PushButton.c</name>
+            </file>
+            <file>
+                <name>$PROJ_DIR$\..\Drivers\HAL\PushButton\PushButton.h</name>
+            </file>
+        </group>
+        <group>
             <name>RelayMod</name>
             <file>
                 <name>$PROJ_DIR$\..\Drivers\HAL\RelayMod\Relay.c</name>

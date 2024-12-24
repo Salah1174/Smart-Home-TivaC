@@ -1,15 +1,3 @@
-/******************************************************************************
- *
- * Module: UART5
- *
- * File Name: uart5.h
- *
- * Description: Header file for the TM4C123GH6PM UART5 driver
- *
- * Author: Edges for Training Team
- *
- *******************************************************************************/
-
 #ifndef UART5_H_
 #define UART5_H_
 

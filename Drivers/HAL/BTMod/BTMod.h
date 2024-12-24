@@ -10,6 +10,4 @@ void BTMOD_SendChar(uint8_t data);
 void BTMOD_SendString(char *data);
 void BTMOD_SendInteger(int64_t sNumber);
 
-// void BTMOD_Receive();
-
 #endif

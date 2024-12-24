@@ -13,13 +13,9 @@ void Alarm_Init()
 void Alarm_On()
 {
   DIO_Write('F', GPIO_PIN_3, 1);
-  // SysCtlDelay(10000000);
-  // DIO_Write('F', GPIO_PIN_3, 0);
 }
 
 void Alarm_Off()
 {
   DIO_Write('F', GPIO_PIN_3, 0);
-  // SysCtlDelay(10000000);
-  // DIO_Write('F', GPIO_PIN_3, 0);
 }

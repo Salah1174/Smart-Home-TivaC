@@ -7,43 +7,28 @@
 #include "..\Drivers\HAL\Door\Door.h"
 #include "..\Drivers\MCAL\GPIO\GPIO.h"
 #include "..\Drivers\HAL\AlarmMod\Alarm.h"
-#include "driverlib\gpio.h"
+#include "..\Drivers\HAL\PushButton\PushButton.h"
 #include "driverlib\sysctl.h"
-
-// #include "tm4c123gh6pm.h"
-
+#include "driverlib\gpio.h"
 volatile uint8_t tempStatus = 'C';
-volatile uint32_t Temp = 0;
-volatile bool doorStatus = false;
+volatile uint32_t Temp = 15;
+
 int main(void)
 {
-//    BTMOD_Init();
-//   DIO_Init('F', GPIO_PIN_3, GPIO_DIR_MODE_OUT);
-   //  DIO_Write('F',GPIO_PIN_1,1);
-//   Relay_Init();
-   LM35_Init();
-//   DOOR_Init();
-   Alarm_Init();
-//   char buffer[7];
-//   bool doorStatus;
-  // uint8_t tempStatus = 'C';
-  // uint32_t Temp_int;
-
+  BTMOD_Init();
+  Relay_Init();
+  LM35_Init();
+  DOOR_Init();
+  Alarm_Init();
+  PushButton_Init();
+  char buffer[7];
+  bool doorStatus = true;
   while (1)
   {
-    // doorStatus = DOOR_Status();
-    // Temp = LM35_Temp();
-
-//        sprintf(buffer, "%d %d %c\n", doorStatus, Temp, tempStatus);
-//    BTMOD_SendInteger(doorStatus);
-//    BTMOD_SendChar('\n');
-    // BTMOD_SendChar(' ');
-//     BTMOD_SendInteger(Temp);
-    // BTMOD_SendChar(' ');
-    // BTMOD_SendChar(tempStatus);
-//     BTMOD_SendChar('\n');
-
-//        BTMOD_SendString(buffer);
-        SysCtlDelay(1000000);
+    PushButton_Action();
+    doorStatus = DOOR_Status();
+    sprintf(buffer, "%d %d %c\n", doorStatus, Temp, tempStatus);
+    BTMOD_SendString(buffer);
+    SysCtlDelay(1000000);
   }
 }

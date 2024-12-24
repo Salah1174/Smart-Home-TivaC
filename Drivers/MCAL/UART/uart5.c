@@ -1,15 +1,3 @@
-/******************************************************************************
- *
- * Module: UART5
- *
- * File Name: uart5.c
- *
- * Description: Source file for the TM4C123GH6PM UART5 driver using RX interrupt.
- *
- * Author: Edges for Training Team
- *
- ******************************************************************************/
-
 #include "uart5.h"
 #include "tm4c123gh6pm.h"
 #include "../GPIO/gpio.h"
@@ -19,6 +7,7 @@
  *******************************************************************************/
 volatile uint8 UART5_ReceivedByte = 0; // Variable to store received byte
 volatile uint8 UART5_ReceivedFlag = 0; // Flag to indicate a new byte was received
+// extern volatile bool recBool;
 
 /*******************************************************************************
  *                         Private Functions Definitions                       *
@@ -148,16 +137,14 @@ void UART5_Handler(void)
         UART5_ReceivedByte = (uint8)UART5_DR_R; // Read the received byte
         switch (UART5_ReceivedByte)
         {
-        case '1' :
-            char lampStatus = GPIO_PinRead('F', 0x000000002);
+        case '1':
+            char lampStatus = GPIO_PinRead('F', 0x00000002);
             DIO_Write('F', 0x000000002, !lampStatus);
             break;
         case '2':
-          char plugStatus = GPIO_PinRead('F',0x0000004);
-          DIO_Write('F', 0x000000004, !plugStatus);
+            char plugStatus = GPIO_PinRead('F', 0x0000004);
+            DIO_Write('F', 0x000000004, !plugStatus);
         }
-//        UART5_SendByte(UART5_ReceivedByte);
-//        UART5_ReceivedByte = 0;
         UART5_ICR_R |= UART_ICR_RXIC; // Clear the RX interrupt flag
     }
 }

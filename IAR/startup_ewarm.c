@@ -45,7 +45,6 @@ static void FaultISR(void);
 static void IntDefaultHandler(void);
 extern void LM35_Handler(void);
 extern void UART5_Handler(void);
-extern void DoorIntHandler(void);
 //*****************************************************************************
 //
 // The entry point for the application startup code.
@@ -100,7 +99,7 @@ __root const uVectorEntry __vector_table[] @ ".intvec" =
         IntDefaultHandler, // The PendSV handler
         LM35_Handler,      // The SysTick handler
         IntDefaultHandler, // GPIO Port A
-        DoorIntHandler,    // GPIO Port B
+        IntDefaultHandler, // GPIO Port B
         IntDefaultHandler, // GPIO Port C
         IntDefaultHandler, // GPIO Port D
         IntDefaultHandler, // GPIO Port E
