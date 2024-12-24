@@ -14,6 +14,12 @@ uint32_t SysTick_ValueGet(void);
 bool SysTick_Is_Time_Out(void);
 
 // Function prototypes for interrupt mode
-void SysTick_InitInterrupt(uint32_t reloadValue, uint32_t (*callback)(void)); //pointer to fn that has void return type and takes no arguments
+void SysTick_InitInterrupt(uint32_t reloadValue, uint32_t (*callback)(void)); // pointer to fn that has void return type and takes no arguments
 
-#endif 
+void SysTickEnable(void);
+void SysTickIntEnable(void);
+void SysTickPeriodSet(uint32_t ui32Period);
+void SysTickIntRegister(void (*pfnHandler)(void));
+void SysTickIntDisable(void);
+void SysTickDisable(void);
+#endif

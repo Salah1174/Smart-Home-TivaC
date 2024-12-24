@@ -1,40 +1,39 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  17/Dec/2024  18:20:05
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  18/Dec/2024  18:27:29
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
-#        C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out
+#        E:\Intro To Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out
 #    Map file     =
-#        C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map
+#        E:\Intro To Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map
 #    Command line =
-#        -f "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out.rsp"
-#        ("C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC\ADC.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod\Alarm.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO\GPIO.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\main.o" "C:\ASU\ASU\Fall
-#        2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod\Relay.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart0.o"
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART\uart5.o"
-#        --no_out_extension -o "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out" --redirect
+#        -f "E:\Intro To Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out.rsp" ("E:\Intro To
+#        Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC\ADC.o" "E:\Intro To
+#        Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod\Alarm.o" "E:\Intro To
+#        Embedded\project\Smart
+#        Home\Smart-Home-TivaC\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a"
+#        "E:\Intro To Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO\GPIO.o" "E:\Intro To
+#        Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\main.o"
+#        "E:\Intro To Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod\Relay.o" "E:\Intro To
+#        Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\SysTick\systick.o"
+#        --no_out_extension -o "E:\Intro To Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\Exe\SmartHome.out" --redirect
 #        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
-#        "C:\ASU\ASU\Fall 2024\Intro to Embedded
-#        Systems\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map" --config
+#        "E:\Intro To Embedded\project\Smart
+#        Home\Smart-Home-TivaC\IAR\Debug\List\SmartHome.map" --config
 #        "C:\Program Files\IAR Systems\Embedded Workbench
 #        9.0\arm\config\linker\TexasInstruments\TM4C123GH6.icf" --semihosting
+#        "E:\Intro To Embedded\project\Smart
+#        Home\Smart-Home-TivaC\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a"
 #        --entry __iar_program_start --vfe --text_out locale)
 #
 ###############################################################################
@@ -46,7 +45,7 @@
 Warning[Lt009]: Inconsistent wchar_t size
             sysctl.o(driverlib.a) and 3 other objects in driverlib.a have
                       wchar_t size 16 bits
-            ADC.o and 23 other objects, some of them in dl7M_tln.a and 11 other
+            ADC.o and 18 other objects, some of them in dl7M_tln.a and 11 other
                       libraries have wchar_t size 32 bits
 
 
@@ -86,56 +85,26 @@ define block HEAP with size = 8K, alignment = 8 { };
   .intvec          ro code          0x0    0x40  vector_table_M.o [10]
                                  - 0x40    0x40
 
-"P1":                                    0x2568
-  .text            ro code         0x40   0xf16  xprintffull_nomb.o [7]
-  .text            ro code        0xf56     0xa  xsprout.o [7]
-  .text            ro code        0xf60    0x16  strchr.o [10]
-  .text            ro code        0xf76     0x2  vectortrap_M.o [10]
-  .text            ro code        0xf78    0x40  xfail_s.o [7]
-  .text            ro code        0xfb8    0x36  strlen.o [10]
-  .text            ro code        0xff0    0x58  memchr.o [10]
-  .text            ro code       0x1048    0x76  ABImemcpy_unaligned.o [10]
-  .text            ro code       0x10c0    0x70  frexp.o [9]
-  .text            ro code       0x1130    0x34  DblCmpLe.o [9]
-  .text            ro code       0x1164    0x34  DblCmpGe.o [9]
-  .text            ro code       0x1198   0x13a  ldexp.o [9]
-  .text            ro code       0x12d4    0x36  DblToS32.o [9]
-  .text            ro code       0x130c    0x22  S32ToDbl.o [9]
-  .text            ro code       0x1330   0x24e  DblAddSub.o [9]
-  .text            ro code       0x1580   0x246  DblDiv.o [9]
-  .text            ro code       0x17c8    0x22  DblToU32.o [9]
-  .text            ro code       0x17ec    0x1c  U32ToDbl.o [9]
-  .text            ro code       0x1808   0x1aa  DblMul.o [9]
-  .text            ro code       0x19b4   0x230  I64DivMod.o [10]
-  .text            ro code       0x1be4     0x6  abort.o [7]
-  .text            ro code       0x1bec     0x2  I64DivZer.o [10]
-  .text            ro code       0x1bf0    0x14  exit.o [11]
-  .text            ro code       0x1c04   0x20c  GPIO.o [5]
-  .text            ro code       0x1e10    0x4c  sysctl.o [8]
-  .text            ro code       0x1e5c   0x1f0  gpio.o [8]
-  .text            ro code       0x204c   0x164  main.o [1]
-  .text            ro code       0x21b0    0x30  Alarm.o [2]
-  .text            ro code       0x21e0    0xe4  ADC.o [4]
-  .text            ro code       0x22c4   0x106  uart5.o [6]
-  .text            ro code       0x23cc    0x68  DblToFlt.o [9]
-  .text            ro code       0x2434    0x48  FltToDbl.o [9]
-  .text            ro code       0x247c    0x40  sprintf.o [7]
-  .text            ro code       0x24bc    0x38  zero_init3.o [10]
-  .text            ro code       0x24f4    0x28  data_init.o [10]
-  .text            ro code       0x251c    0x22  fpinit_M.o [9]
-  .iar.init_table  const         0x2540    0x10  - Linker created -
-  .text            ro code       0x2550    0x1e  cmain.o [10]
-  .text            ro code       0x256e     0x4  low_level_init.o [7]
-  .text            ro code       0x2572     0x4  exit.o [7]
-  .text            ro code       0x2578     0xa  cexit.o [10]
-  .text            ro code       0x2584    0x1c  cstartup_M.o [10]
-  .rodata          const         0x25a0     0x8  main.o [1]
-  .rodata          const         0x25a8     0x0  zero_init3.o [10]
-                               - 0x25a8  0x2568
+"P1":                                     0x304
+  .text            ro code         0x40   0x1de  main.o [1]
+  .text            ro code        0x21e    0x38  zero_init3.o [10]
+  .text            ro code        0x256     0x2  vectortrap_M.o [10]
+  .rodata          const          0x258    0x2c  main.o [1]
+  .text            ro code        0x284    0x28  data_init.o [10]
+  .text            ro code        0x2ac    0x22  fpinit_M.o [9]
+  .iar.init_table  const          0x2d0    0x10  - Linker created -
+  .text            ro code        0x2e0    0x1e  cmain.o [10]
+  .text            ro code        0x2fe     0x4  low_level_init.o [7]
+  .text            ro code        0x302     0x4  exit.o [7]
+  .text            ro code        0x308     0xa  cexit.o [10]
+  .text            ro code        0x314    0x14  exit.o [11]
+  .text            ro code        0x328    0x1c  cstartup_M.o [10]
+  .rodata          const          0x344     0x0  zero_init3.o [10]
+                                - 0x344   0x304
 
 "P2", part 1 of 2:                          0x4
-  .bss             zero     0x2000'0000     0x4  xfail_s.o [7]
-                          - 0x2000'0004     0x4
+  .bss             zero     0x2000'0000     0x1  main.o [1]
+                          - 0x2000'0001     0x1
 
 "P2", part 2 of 2:                       0x1000
   CSTACK                    0x2000'0008  0x1000  <Block>
@@ -146,7 +115,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-       0x25a8     0x3'ffff  0x3'da58
+        0x344     0x3'ffff  0x3'fcbc
   0x2000'0004  0x2000'0007       0x4
   0x2000'1008  0x2000'7fff    0x6ff8
 
@@ -158,8 +127,8 @@ Unused ranges:
           Address      Size
           -------      ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x4:
-          0x2000'0000   0x4
+    1 destination range, total size 0x1:
+          0x2000'0000   0x1
 
 
 
@@ -167,226 +136,130 @@ Zero (__iar_zero_init3)
 *** MODULE SUMMARY
 ***
 
-    Module                 ro code  ro data  rw data
-    ------                 -------  -------  -------
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
 command line/config:
-    ------------------------------------------------
+    -------------------------------------------
     Total:
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj: [1]
-    main.o                     356        8
-    ------------------------------------------------
-    Total:                     356        8
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj: [1]
+    main.o                478       44        1
+    -------------------------------------------
+    Total:                478       44        1
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod: [2]
-    Alarm.o                     48
-    ------------------------------------------------
-    Total:                      48
-
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod: [3]
-    ------------------------------------------------
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod: [2]
+    -------------------------------------------
     Total:
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC: [4]
-    ADC.o                      228
-    ------------------------------------------------
-    Total:                     228
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod: [3]
+    -------------------------------------------
+    Total:
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO: [5]
-    GPIO.o                     524
-    ------------------------------------------------
-    Total:                     524
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC: [4]
+    -------------------------------------------
+    Total:
 
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART: [6]
-    uart5.o                    262
-    ------------------------------------------------
-    Total:                     262
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO: [5]
+    -------------------------------------------
+    Total:
+
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\SysTick: [6]
+    -------------------------------------------
+    Total:
 
 dl7M_tln.a: [7]
-    abort.o                      6
-    exit.o                       4
-    low_level_init.o             4
-    sprintf.o                   64
-    xfail_s.o                   64                 4
-    xprintffull_nomb.o       3'862
-    xsprout.o                   10
-    ------------------------------------------------
-    Total:                   4'014                 4
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
 
 driverlib.a: [8]
-    gpio.o                     496
-    sysctl.o                    76
-    ------------------------------------------------
-    Total:                     572
+    -------------------------------------------
+    Total:
 
 m7M_tls.a: [9]
-    DblAddSub.o                590
-    DblCmpGe.o                  52
-    DblCmpLe.o                  52
-    DblDiv.o                   582
-    DblMul.o                   426
-    DblToFlt.o                 104
-    DblToS32.o                  54
-    DblToU32.o                  34
-    FltToDbl.o                  72
-    S32ToDbl.o                  34
-    U32ToDbl.o                  28
-    fpinit_M.o                  34
-    frexp.o                    112
-    ldexp.o                    314
-    ------------------------------------------------
-    Total:                   2'488
+    fpinit_M.o             34
+    -------------------------------------------
+    Total:                 34
 
 rt7M_tl.a: [10]
-    ABImemcpy_unaligned.o      118
-    I64DivMod.o                560
-    I64DivZer.o                  2
-    cexit.o                     10
-    cmain.o                     30
-    cstartup_M.o                28
-    data_init.o                 40
-    memchr.o                    88
-    strchr.o                    22
-    strlen.o                    54
-    vector_table_M.o            64
-    vectortrap_M.o               2
-    zero_init3.o                56
-    ------------------------------------------------
-    Total:                   1'074
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           28
+    data_init.o            40
+    vector_table_M.o       64
+    vectortrap_M.o          2
+    zero_init3.o           56
+    -------------------------------------------
+    Total:                230
 
 shb_l.a: [11]
-    exit.o                      20
-    ------------------------------------------------
-    Total:                      20
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
 
-    Gaps                        28        2
-    Linker created                       16    4'096
-----------------------------------------------------
-    Grand Total:             9'614       26    4'100
+    Gaps                    4        2
+    Linker created                  16    4'096
+-----------------------------------------------
+    Grand Total:          774       62    4'097
 
 
 *******************************************************************************
 *** ENTRY LIST
 ***
 
-Entry                       Address   Size  Type      Object
------                       -------   ----  ----      ------
-.iar.init_table$$Base        0x2540          --   Gb  - Linker created -
-.iar.init_table$$Limit       0x2550          --   Gb  - Linker created -
-?main                        0x2551         Code  Gb  cmain.o [10]
-ADC1_Init                    0x21e1   0x84  Code  Gb  ADC.o [4]
-ADC1_ReadValue               0x2265   0x28  Code  Gb  ADC.o [4]
-Alarm_Init                   0x21b1    0xe  Code  Gb  Alarm.o [2]
-Alarm_Toggle                 0x21bf   0x1e  Code  Gb  Alarm.o [2]
-BusFault_Handler              0xf77         Code  Wk  vectortrap_M.o [10]
-CSTACK$$Base            0x2000'0008          --   Gb  - Linker created -
-CSTACK$$Limit           0x2000'1008          --   Gb  - Linker created -
-DIO_Init                     0x1c9f   0xe4  Code  Gb  GPIO.o [5]
-DIO_Write                    0x1dc5   0x2c  Code  Gb  GPIO.o [5]
-DebugMon_Handler              0xf77         Code  Wk  vectortrap_M.o [10]
-GPIODirModeSet               0x1e5d   0x28  Code  Gb  gpio.o [8]
-GPIOPadConfigSet             0x1e85  0x174  Code  Gb  gpio.o [8]
-GPIOPinRead                  0x1ff9    0x6  Code  Gb  gpio.o [8]
-GPIOPinTypeGPIOInput         0x2009   0x14  Code  Gb  gpio.o [8]
-GPIOPinTypeGPIOOutput        0x201d    0xa  Code  Gb  gpio.o [8]
-GPIOPinWrite                 0x1fff    0x6  Code  Gb  gpio.o [8]
-GPIO_PinRead                 0x1df1   0x20  Code  Gb  GPIO.o [5]
-GetPeripheralAndBaseAddress
-                             0x1c3d   0x62  Code  Gb  GPIO.o [5]
-GetPortBaseAddress           0x1c05   0x38  Code  Gb  GPIO.o [5]
-HardFault_Handler             0xf77         Code  Wk  vectortrap_M.o [10]
-MemManage_Handler             0xf77         Code  Wk  vectortrap_M.o [10]
-NMI_Handler                   0xf77         Code  Wk  vectortrap_M.o [10]
-PendSV_Handler                0xf77         Code  Wk  vectortrap_M.o [10]
-Region$$Table$$Base          0x2540          --   Gb  - Linker created -
-Region$$Table$$Limit         0x2550          --   Gb  - Linker created -
-SVC_Handler                   0xf77         Code  Wk  vectortrap_M.o [10]
-SysCtlDelay                  0x1e4d    0x8  Code  Gb  sysctl.o [8]
-SysCtlPeripheralEnable       0x1e31    0x8  Code  Gb  sysctl.o [8]
-SysCtlPeripheralReady        0x1e11    0x8  Code  Gb  sysctl.o [8]
-SysTick_Handler               0xf77         Code  Wk  vectortrap_M.o [10]
-UART5_Init                   0x22c5   0x9c  Code  Gb  uart5.o [6]
-UART5_ReceiveByte            0x2371    0x8  Code  Gb  uart5.o [6]
-UART5_SendByte               0x2361   0x10  Code  Gb  uart5.o [6]
-UART5_SendString             0x23b5   0x16  Code  Gb  uart5.o [6]
-UsageFault_Handler            0xf77         Code  Wk  vectortrap_M.o [10]
-_LitobFullNoMb                0xd5d  0x10c  Code  Lc  xprintffull_nomb.o [7]
-_PrintfFullNoMb                0x41  0xcec  Code  Gb  xprintffull_nomb.o [7]
-_PutcharFullNoMb              0xec1   0x20  Code  Lc  xprintffull_nomb.o [7]
-_PutcharsFullNoMb             0xee1   0x2e  Code  Lc  xprintffull_nomb.o [7]
-_SProut                       0xf57    0xa  Code  Gb  xsprout.o [7]
-__aeabi_cdcmple              0x1131         Code  Gb  DblCmpLe.o [9]
-__aeabi_cdrcmple             0x1165         Code  Gb  DblCmpGe.o [9]
-__aeabi_d2f                  0x23cd         Code  Gb  DblToFlt.o [9]
-__aeabi_d2iz                 0x12d5         Code  Gb  DblToS32.o [9]
-__aeabi_d2uiz                0x17c9         Code  Gb  DblToU32.o [9]
-__aeabi_ddiv                 0x1581         Code  Gb  DblDiv.o [9]
-__aeabi_dmul                 0x1809         Code  Gb  DblMul.o [9]
-__aeabi_dsub                 0x149d         Code  Gb  DblAddSub.o [9]
-__aeabi_f2d                  0x2435         Code  Gb  FltToDbl.o [9]
-__aeabi_i2d                  0x130d         Code  Gb  S32ToDbl.o [9]
-__aeabi_ldiv0                0x1bed         Code  Gb  I64DivZer.o [10]
-__aeabi_ui2d                 0x17ed         Code  Gb  U32ToDbl.o [9]
-__aeabi_uldivmod             0x19b5         Code  Gb  I64DivMod.o [10]
-__cmain                      0x2551         Code  Gb  cmain.o [10]
-__exit                       0x1bf1   0x14  Code  Gb  exit.o [11]
-__iar_Fail_s                  0xf79   0x1c  Code  Gb  xfail_s.o [7]
-__iar_Memchr                  0xff1         Code  Gb  memchr.o [10]
-__iar_Strchr                  0xf61         Code  Gb  strchr.o [10]
-__iar_data_init3             0x24f5   0x28  Code  Gb  data_init.o [10]
-__iar_frexp                  0x10cd         Code  Gb  frexp.o [9]
-__iar_frexpl                 0x10cd         Code  Gb  frexp.o [9]
-__iar_init_vfp               0x251d         Code  Gb  fpinit_M.o [9]
-__iar_ldexp64                0x1199         Code  Gb  ldexp.o [9]
-__iar_program_start          0x2585         Code  Gb  cstartup_M.o [10]
-__iar_scalbln64              0x1199         Code  Gb  ldexp.o [9]
-__iar_scalbn64               0x1199         Code  Gb  ldexp.o [9]
-__iar_softfp___iar_frexp64
-                             0x10c1         Code  Gb  frexp.o [9]
-__iar_softfp_frexp           0x10c1         Code  Gb  frexp.o [9]
-__iar_softfp_frexpl          0x10c1         Code  Gb  frexp.o [9]
-__iar_unaligned_memcpy       0x1049         Code  Gb  ABImemcpy_unaligned.o [10]
-__iar_unaligned_memcpy4
-                             0x1069         Code  Gb  ABImemcpy_unaligned.o [10]
-__iar_unaligned_memcpy8
-                             0x1069         Code  Gb  ABImemcpy_unaligned.o [10]
-__iar_zero_init3             0x24bd   0x38  Code  Gb  zero_init3.o [10]
-__low_level_init             0x256f    0x4  Code  Gb  low_level_init.o [7]
-__vector_table                  0x0         Data  Gb  vector_table_M.o [10]
-_call_main                   0x255d         Code  Gb  cmain.o [10]
-_exit                        0x2579         Code  Gb  cexit.o [10]
-abort                        0x1be5    0x6  Code  Gb  abort.o [7]
-exit                         0x2573    0x4  Code  Gb  exit.o [7]
-ldexp                        0x1199         Code  Gb  ldexp.o [9]
-ldexpl                       0x1199         Code  Gb  ldexp.o [9]
-main                         0x204d  0x164  Code  Gb  main.o [1]
-memchr                        0xff1         Code  Gb  memchr.o [10]
-scalbln                      0x1199         Code  Gb  ldexp.o [9]
-scalblnl                     0x1199         Code  Gb  ldexp.o [9]
-scalbn                       0x1199         Code  Gb  ldexp.o [9]
-scalbnl                      0x1199         Code  Gb  ldexp.o [9]
-scale                         0xe69   0x46  Code  Lc  xprintffull_nomb.o [7]
-sec_hand                0x2000'0000    0x4  Data  Lc  xfail_s.o [7]
-sprintf                      0x247d   0x40  Code  Gb  sprintf.o [7]
-strchr                        0xf61         Code  Gb  strchr.o [10]
-strlen                        0xfb9         Code  Gb  strlen.o [10]
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base         0x2d0         --   Gb  - Linker created -
+.iar.init_table$$Limit        0x2e0         --   Gb  - Linker created -
+?main                         0x2e1        Code  Gb  cmain.o [10]
+BusFault_Handler              0x257        Code  Wk  vectortrap_M.o [10]
+CSTACK$$Base            0x2000'0008         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1008         --   Gb  - Linker created -
+DebugMon_Handler              0x257        Code  Wk  vectortrap_M.o [10]
+GPIO_Init                     0x171  0x2e  Code  Gb  main.o [1]
+HardFault_Handler             0x257        Code  Wk  vectortrap_M.o [10]
+MemManage_Handler             0x257        Code  Wk  vectortrap_M.o [10]
+NMI_Handler                   0x257        Code  Wk  vectortrap_M.o [10]
+PendSV_Handler                0x257        Code  Wk  vectortrap_M.o [10]
+Region$$Table$$Base           0x2d0         --   Gb  - Linker created -
+Region$$Table$$Limit          0x2e0         --   Gb  - Linker created -
+SVC_Handler                   0x257        Code  Wk  vectortrap_M.o [10]
+SysTick_Handler               0x257        Code  Wk  vectortrap_M.o [10]
+UART0_Init                     0xc1  0xb0  Code  Gb  main.o [1]
+UART0_TransmitChar            0x19f  0x10  Code  Gb  main.o [1]
+UART0_TransmitString          0x209  0x16  Code  Gb  main.o [1]
+UsageFault_Handler            0x257        Code  Wk  vectortrap_M.o [10]
+__cmain                       0x2e1        Code  Gb  cmain.o [10]
+__exit                        0x315  0x14  Code  Gb  exit.o [11]
+__iar_data_init3              0x285  0x28  Code  Gb  data_init.o [10]
+__iar_init_vfp                0x2ad        Code  Gb  fpinit_M.o [9]
+__iar_program_start           0x329        Code  Gb  cstartup_M.o [10]
+__iar_zero_init3              0x21f  0x38  Code  Gb  zero_init3.o [10]
+__low_level_init              0x2ff   0x4  Code  Gb  low_level_init.o [7]
+__vector_table                  0x0        Data  Gb  vector_table_M.o [10]
+_call_main                    0x2ed        Code  Gb  cmain.o [10]
+_exit                         0x309        Code  Gb  cexit.o [10]
+exit                          0x303   0x4  Code  Gb  exit.o [7]
+main                           0x41  0x80  Code  Gb  main.o [1]
+received_char           0x2000'0000   0x1  Data  Gb  main.o [1]
 
 
-[1] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj
-[2] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod
-[3] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod
-[4] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC
-[5] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO
-[6] = C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\UART
+[1] = E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj
+[2] = E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\HAL\AlarmMod
+[3] = E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\HAL\RelayMod
+[4] = E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\ADC
+[5] = E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\GPIO
+[6] = E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\Obj\MCAL\SysTick
 [7] = dl7M_tln.a
 [8] = driverlib.a
 [9] = m7M_tls.a
 [10] = rt7M_tl.a
 [11] = shb_l.a
 
-  9'614 bytes of readonly  code memory
-     26 bytes of readonly  data memory
-  4'100 bytes of readwrite data memory
+    774 bytes of readonly  code memory
+     62 bytes of readonly  data memory
+  4'097 bytes of readwrite data memory
 
 Errors: none
 Warnings: 1

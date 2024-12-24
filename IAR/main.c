@@ -1,196 +1,108 @@
-//#include "..\Drivers\MCAL\DIO\DIO.h"
-#include "..\Drivers\MCAL\UART\uart5.h"
-//#include "..\Drivers\MCAL\UART\uart0.h"
-#include "..\Drivers\MCAL\ADC\ADC.h"
-#include <stdbool.h>
 #include <stdint.h>
-#include <stdio.h>
-#include "driverlib\gpio.h"
-#include "driverlib\sysctl.h"
-#include "..\Drivers\MCAL\GPIO\GPIO.h"
-//#include "..\Drivers\HAL\RelayMod\Relay.h"
-#include "..\Drivers\HAL\AlarmMod\Alarm.h"
+#include "..\Drivers\MCAL\ADC\tm4c123gh6pm.h"
 
+#define red   (1 << 1)
+#define blue  (1 << 2)
+#define green (1 << 3)
 
+// Function Prototypes
+void UART0_Init(void);
+void UART0_TransmitChar(char c);
+void UART0_TransmitString(const char *str);
+void GPIO_Init(void);
+void UART0_Handler(void);
 
-int main(void)
-{
-    Alarm_Init();
-    ADC1_Init();
-    UART5_Init(); // Initialize UART5
-    DIO_Init('F',GPIO_PIN_4,GPIO_DIR_MODE_IN);
-    DIO_Init('F',GPIO_PIN_0,GPIO_DIR_MODE_IN);
-    DIO_Init('F',GPIO_PIN_1,GPIO_DIR_MODE_OUT);
-    DIO_Init('F',GPIO_PIN_2,GPIO_DIR_MODE_OUT);
-    uint32_t ADC_Value;
-    float temperature;
-    uint32_t Temp_int = 0;
-    char buffer[5];
-    DIO_Init('B',GPIO_PIN_3,GPIO_DIR_MODE_IN);
-    DIO_Write('F',GPIO_PIN_2,0);    
-    bool isDoorOpened = 0 ;
-    bool UARTCon = 0;
-    while (1)
-    {        
-      isDoorOpened = GPIO_PinRead('B',GPIO_INT_PIN_3);
-      
-      for (volatile int i = 0; i < 1000000; i++);
-      ADC_Value = ADC1_ReadValue();
-      float voltage = ((ADC_Value* 3.3)/4095.0);
-      if (voltage < 0)
-      {
-        voltage = 0.0;
-      }
-      
-      temperature = voltage *100.0;
-      Temp_int = temperature;
-      if (Temp_int >= 29)
-      {
-            Alarm_Toggle();
-      }
-      
-      
-      
-//      bool on_switch = (GPIO_PinRead('F',GPIO_PIN_4)) ^ (GPIO_PinRead('F',GPIO_PIN_0)); 
+// Global Variables
+volatile char received_char = 0;
 
-      
-      
-      for (volatile int i = 0; i < 500000; i++);
-      
-//      if(on_switch){
-//        DIO_Write('F',GPIO_PIN_2,1);
-//      }
-//      bool on_uart=0;
-//      if (UART5_ReceiveByte()=='1'){
-//      on_uart=1;
-//      }
-      
-      
-      
-      bool on = GPIO_PinRead('F',GPIO_PIN_1);
-      
-//      if(UART5_ReceiveByte() == '1')
-//      {
-//        UARTCon^=1;
-//      }
-      
-//      bool PinStatus = GPIO_PinRead('F',GPIO_PIN_0);
-//      
-//      if(on&&UARTCon&&PinStatus)
-//       {
-//         DIO_Write('F',GPIO_PIN_1,0);
-//       }//off 
-//      else if(!UARTCon && PinStatus)
-//       {
-//          DIO_Write('F',GPIO_PIN_1,1);
-//       }//on
-//      else if(UARTCon && !PinStatus)
-//        {
-//          DIO_Write('F',GPIO_PIN_1,1);
-//        }//on
-//      else if(!UARTCon && !PinStatus)
-//      {
-//        DIO_Write('F',GPIO_PIN_1,0);
-//      }
-//      
-        //-> off
-      
-        if(UART5_ReceiveByte()=='1')
-        {
-          on = !on;
-          DIO_Write('F',GPIO_PIN_1,on);
+int main(void) {
+    UART0_Init();      // Initialize UART0
+    GPIO_Init();       // Initialize GPIO for LEDs
+    GPIO_PORTF_DATA_R = red;
+    GPIO_PORTF_DATA_R = blue;
+                
+    UART0_TransmitString("Hello from TM4C123GH6PM with Interrupts!\r\n");
+    
+    while (1) {
+        // Check if a new character is received
+        if (received_char != 0) {
+            char c = received_char;
+	    UART0_TransmitChar(c);
+            received_char = 0; // Clear the received character
+            
+            // Control the LEDs based on received character
+            switch (c) {
+            case 'r':
+                GPIO_PORTF_DATA_R = red;
+                break;
+            case 'b':
+                GPIO_PORTF_DATA_R = blue;
+                break;
+            case 'g':
+                GPIO_PORTF_DATA_R = green;
+                break;
+            case 'x':
+                GPIO_PORTF_DATA_R = 0x00;
+                break;
+            case 'w':
+                GPIO_PORTF_DATA_R = red | blue | green;
+                break;
+            default:
+                break;
+            }
         }
-        
-         sprintf(buffer, "%d %d\n",isDoorOpened,Temp_int);
-         UART5_SendString(buffer);
-         for (volatile int i = 0; i < 500000; i++);
-          
-        
-        
-//      if(on)
-//        {
-//            on = !(on);
-//          DIO_Write('F',GPIO_PIN_1,on);       
-//        }
-//      else
-//      {
-//        
-//      }
-//      
-      
-      
-      for (volatile int i = 0; i < 500000; i++);
-
+        else
+        {
+          UART0_TransmitString("Hello from TM4C123GH6PM with Interrupts!\r\n");
+        }
     }
-    
-    
-    return 0;
-    
-    //    DIO_Init('F',GPIO_PIN_4,GPIO_DIR_MODE_IN);
-//    DIO_Init('F',GPIO_PIN_0,GPIO_DIR_MODE_IN);
-//    DIO_Init('F',GPIO_PIN_1,GPIO_DIR_MODE_OUT);
-//    DIO_Init('F',GPIO_PIN_2,GPIO_DIR_MODE_OUT);
-//    DIO_Write('F',GPIO_PIN_2,0); 
-//    bool on_switch4 = GPIO_PinRead('F',GPIO_PIN_4);
-//    bool on_switch0 = GPIO_PinRead('F',GPIO_PIN_0);
-////    for (volatile int i = 0; i < 500000; i++);
-//      if(on_switch4 | on_switch0){
-////        on_switch=!on_switch;
-//        DIO_Write('F',GPIO_PIN_2,1);
-//      }
- 
 }
 
-//    
+void UART0_Init(void) {
+    SYSCTL_RCGCUART_R |= (1 << 0); // Enable clock for UART0
+    SYSCTL_RCGCGPIO_R |= (1 << 0); // Enable clock for GPIOA
+    while ((SYSCTL_PRUART_R & (1 << 0)) == 0);
+    while ((SYSCTL_PRGPIO_R & (1 << 0)) == 0);
     
-    // Turn on the LED
-//  else {
-//        DIO_Write( 'F' , GPIO_PIN_1 , 1);
-//  
-//      SysCtlDelay(5000000);
-//       DIO_Write('F',1,0);
-//      
-//      sprintf(buffer, "Temperature: %d V\n", Temp_int);
-//      UART5_SendString(buffer);
-//        for (volatile int i = 0; i < 2000000; i++);
+    GPIO_PORTA_AFSEL_R |= (1 << 0) | (1 << 1);
+    GPIO_PORTA_PCTL_R &= ~0xFF;
+    GPIO_PORTA_PCTL_R |= (1 << 0) | (1 << 4);
+    GPIO_PORTA_DEN_R |= (1 << 0) | (1 << 1);
+    GPIO_PORTA_AMSEL_R &= ~((1 << 0) | (1 << 1));
+    
+    UART0_CTL_R &= ~(1 << 0); // Disable UART0
+    UART0_IBRD_R = 104;       // Integer part for 9600 baud
+    UART0_FBRD_R = 11;        // Fractional part for 9600 baud
+    UART0_LCRH_R = (0x3 << 5); // 8-bit word length, no parity, 1 stop bit
+    UART0_CC_R = 0x0;         // Use system clock
+    UART0_IM_R |= (1 << 4);   // Enable RX interrupt
+    NVIC_EN0_R |= (1 << 5);   // Enable IRQ5 for UART0 in NVIC
+    UART0_CTL_R |= (1 << 0) | (1 << 8) | (1 << 9); // Enable UART0, Tx, Rx
+}
 
-//relay , alarm testing
-  
-//    Relay_Init();
-////    DIO_Write('F', GPIO_PIN_3 | GPIO_PIN_2, 0);
-////  while(1){
-//    Relay_Toggle();
-//    Relay_Toggle();
-//
-////      Alarm_Toggle();
-//    }
-  
-  //gpio testing
-  
-////  DIO_Init('F', GPIO_PIN_0, GPIO_DIR_MODE_IN, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
-//  DIO_Init('F', GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3, GPIO_DIR_MODE_OUT, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD);
-//   DIO_Write('F', GPIO_PIN_1 | GPIO_PIN_3 | GPIO_PIN_2, 0);
-//  while (1){
-//    
-//      DIO_Write('F', GPIO_PIN_3 | GPIO_PIN_2, 1);
-//    SysCtlDelay(5000000);
-//    DIO_Write('F', GPIO_PIN_3 | GPIO_PIN_2, 0);
-//    SysCtlDelay(5000000);
-//  }
+void GPIO_Init(void) {
+    SYSCTL_RCGCGPIO_R |= (1 << 5); // Enable clock for GPIOF
+    while ((SYSCTL_PRGPIO_R & (1 << 5)) == 0);
     
-  //UART testing
-      //UART5_SendInteger(50);
-//    UART5_SendByte(temp);
-//      temp++;
-//      UART5_SendByte(temp);
-      
-//        uint8 receivedChar = UART5_ReceiveByte(); // Receive a character
-//
-//        if (receivedChar == '1') // If '1' is received
-//        {
-//            GPIO_PORTF_DATA_REG ^= LED_PIN; // Turn on the LED
-//        }
-//        else if (receivedChar == '0') // If '0' is received
-//        {
-//            GPIO_PORTF_DATA_REG &= ~LED_PIN; // Turn off the LED
-//        }
+    GPIO_PORTF_DIR_R |= red | blue | green; // Set LEDs as outputs
+    GPIO_PORTF_DEN_R |= red | blue | green; // Enable digital function
+}
+
+// Interrupt Service Routine for UART0
+void UART0_Handler(void) {
+    if (UART0_MIS_R & (1 << 4)) { // Check if RX interrupt occurred
+        received_char = (char)(UART0_DR_R & 0xFF); // Read the received character
+        UART0_ICR_R |= (1 << 4); // Clear RX interrupt flag
+    }
+}
+
+void UART0_TransmitChar(char c) {
+    while ((UART0_FR_R & (1 << 5)) != 0); // Wait until the transmit FIFO is not full
+    UART0_DR_R = c; // Write the character to the data register
+}
+
+void UART0_TransmitString(const char *str) {
+    while (*str) {
+        UART0_TransmitChar(*str++);
+    }
+}

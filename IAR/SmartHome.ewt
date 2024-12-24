@@ -2886,24 +2886,12 @@
             </file>
         </group>
         <group>
-            <name>UART</name>
+            <name>SysTick</name>
             <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\std_types.h</name>
+                <name>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\systick.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\tm4c123gh6pm_registers.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart0.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart0.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart5.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart5.h</name>
+                <name>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\systick.h</name>
             </file>
         </group>
         <file>

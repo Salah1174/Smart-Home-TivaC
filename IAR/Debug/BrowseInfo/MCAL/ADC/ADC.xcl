@@ -1,19 +1,21 @@
-"C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\ADC\ADC.c"
+"E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\Drivers\MCAL\ADC\ADC.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\ADC\ADC.pbi.dep
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\ADC\ADC.pbi.dep
 -o
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\ADC\ADC.pbi
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\IAR\Debug\BrowseInfo\MCAL\ADC\ADC.pbi
 -I
-C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\MCAL\ADC
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\Drivers\MCAL\ADC
 -I
 C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib\
 -I
 C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib
+-I
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\Drivers\TivaLib\
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I
@@ -24,6 +26,8 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c
 C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib
 -I
 C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib
+-I
+E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\Drivers\TivaLib
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
@@ -323,6 +327,9 @@ C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib
 -D__EDG_FLOAT80_ENABLING_POSSIBLE=0
 -D__EDG_FLOAT128_ENABLING_POSSIBLE=0
 -D__EDG_INT128_EXTENSIONS_ALLOWED=0
+-Dewarm=1
+-DPART_TM4C123GH6PM=1
+-DTARGET_IS_RB1=1
 -D_DLIB_CONFIG_FILE_HEADER_NAME="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\DLib_Config_Normal.h"
 -D_DLIB_CONFIG_FILE_STRING="C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Config_Normal.h"
 -D__VERSION__="IAR ANSI C/C++ Compiler V9.10.1.308/W64 for ARM"

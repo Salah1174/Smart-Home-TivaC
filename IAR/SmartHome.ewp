@@ -214,7 +214,9 @@
                 </option>
                 <option>
                     <name>CCDefines</name>
-                    <state></state>
+                    <state>ewarm</state>
+                    <state>PART_TM4C123GH6PM</state>
+                    <state>TARGET_IS_RB1</state>
                 </option>
                 <option>
                     <name>CCPreprocFile</name>
@@ -337,6 +339,7 @@
                     <name>CCIncludePath2</name>
                     <state>C:\ASU\ASU\Fall 2024\Intro to Embedded Systems\Smart-Home-TivaC\Drivers\TivaLib</state>
                     <state>C:\Users\Salma\.vscode\Smart-Home-TivaC\Drivers\TivaLib</state>
+                    <state>E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\Drivers\TivaLib</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -652,7 +655,7 @@
             <data>
                 <extensions></extensions>
                 <cmdline></cmdline>
-                <hasPrio>128</hasPrio>
+                <hasPrio>1</hasPrio>
                 <buildSequence>inputOutputBased</buildSequence>
             </data>
         </settings>
@@ -793,7 +796,7 @@
                 </option>
                 <option>
                     <name>IlinkAdditionalLibs</name>
-                    <state></state>
+                    <state>E:\Intro To Embedded\project\Smart Home\Smart-Home-TivaC\Drivers\TivaLib\driverlib\ewarm\Exe\driverlib.a</state>
                 </option>
                 <option>
                     <name>IlinkOverrideProgramEntryLabel</name>
@@ -2131,24 +2134,12 @@
             </file>
         </group>
         <group>
-            <name>UART</name>
+            <name>SysTick</name>
             <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\std_types.h</name>
+                <name>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\systick.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\tm4c123gh6pm_registers.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart0.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart0.h</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart5.c</name>
-            </file>
-            <file>
-                <name>$PROJ_DIR$\..\Drivers\MCAL\UART\uart5.h</name>
+                <name>$PROJ_DIR$\..\Drivers\TivaLib\driverlib\systick.h</name>
             </file>
         </group>
         <file>
