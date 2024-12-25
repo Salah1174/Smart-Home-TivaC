@@ -4,12 +4,6 @@ This project demonstrates a Smart Home Automation system built using the Tiva-C 
 
 ---
 
-## Project Structure
-
-The project is organized into the following directories and files:
-
----
-
 ## Team Members
 
 | Name              | Contributions                                 |
